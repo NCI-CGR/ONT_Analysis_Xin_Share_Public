@@ -56,3 +56,17 @@ The file `methylation.bigWig` is ready for use in:
 - [IGV](https://software.broadinstitute.org/software/igv/)
 - [UCSC Genome Browser](https:/)
 
+## Reference
+1. Where to download UCSC tool: bedGraphToBigWig
+```
+🔽 Download for Linux:
+wget https://hgdownload.soe.ucsc.edu/admin/exe/linux.x86_64/bedGraphToBigWig
+chmod +x bedGraphToBigWig
+sudo mv bedGraphToBigWig /usr/local/bin/
+
+🔽 Download for macOS:
+wget https://hgdownload.soe.ucsc.edu/admin/exe/macOSX.x86_64/bedGraphToBigWig
+chmod +x bedGraphToBigWig
+sudo mv bedGraphToBigWig /usr/local/bin/
+```
+
