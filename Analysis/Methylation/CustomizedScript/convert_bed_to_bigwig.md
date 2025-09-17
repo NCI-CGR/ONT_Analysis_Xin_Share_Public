@@ -93,3 +93,23 @@ sudo mv bedGraphToBigWig /usr/local/bin/
 (base) lix33@NCI-02294434-ML:~/lxwg/ad-hoc/ONT/Results/wf-human-variation/SD386613/Methylation_Analysis$ ./bedGraphToBigWig wf_mods.2.merged.sorted.bedGraph hg38.chrom.sizes wf_mods.2.bw
 ```
 
+4. Summarize the the bigwig info
+```
+ wget http://hgdownload.soe.ucsc.edu/admin/exe/macOSX.x86_64/bigWigInfo
+
+(base) lix33@NCI-02294434-ML:~/lxwg/ad-hoc/ONT/Results/wf-human-variation/SD386613/Methylation_Analysis$ chmod +x ./bigWigInfo 
+(base) lix33@NCI-02294434-ML:~/lxwg/ad-hoc/ONT/Results/wf-human-variation/SD386613/Methylation_Analysis$ ./bigWigInfo ./wf_mods.1.bw 
+version: 4
+isCompressed: yes
+isSwapped: 0
+primaryDataSize: 7,759,067
+primaryIndexSize: 45,272
+zoomLevels: 10
+chromCount: 1
+basesCovered: 1,066,682
+mean: 40.838497
+min: 0.000000
+max: 50.000000
+std: 10.701555
+```
+
