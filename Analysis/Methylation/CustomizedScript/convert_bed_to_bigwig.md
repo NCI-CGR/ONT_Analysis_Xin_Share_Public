@@ -113,3 +113,10 @@ max: 50.000000
 std: 10.701555
 ```
 
+5. Figure Illumination
+- figeno gui
+<img width="1482" height="757" alt="image" src="https://github.com/user-attachments/assets/4d745cf4-8297-4f51-8188-ac902801c51c" />
+
+<img width="458" height="457" alt="image" src="https://github.com/user-attachments/assets/c65b563e-8859-4411-8d6d-5b2b8cde88de" />
+
+
