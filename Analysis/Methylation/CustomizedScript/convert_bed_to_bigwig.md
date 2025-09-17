@@ -82,8 +82,14 @@ sudo mv bedGraphToBigWig /usr/local/bin/
 (2) sort merged bed file
 (3) convert bed file to bigwig file 
 
+*** For haplotype 1 ***
 (base) lix33@NCI-02294434-ML:~/lxwg/ad-hoc/ONT/Results/wf-human-variation/SD386613/Methylation_Analysis$ bedtools merge -i wf_mods.1.sorted.bedGraph -c 4 -o mean > wf_mods.1.merged.bedGraph
 (base) lix33@NCI-02294434-ML:~/lxwg/ad-hoc/ONT/Results/wf-human-variation/SD386613/Methylation_Analysis$ sort -k1,1 -k2,2n wf_mods.1.merged.bedGraph > wf_mods.1.merged.sorted.bedGraph
 (base) lix33@NCI-02294434-ML:~/lxwg/ad-hoc/ONT/Results/wf-human-variation/SD386613/Methylation_Analysis$ ./bedGraphToBigWig wf_mods.1.merged.sorted.bedGraph hg38.chrom.sizes wf_mods.1.bw
+
+*** For haplotype 2 ***
+(base) lix33@NCI-02294434-ML:~/lxwg/ad-hoc/ONT/Results/wf-human-variation/SD386613/Methylation_Analysis$ bedtools merge -i wf_mods.2.sorted.bedGraph -c 4 -o mean > wf_mods.2.merged.bedGraph
+(base) lix33@NCI-02294434-ML:~/lxwg/ad-hoc/ONT/Results/wf-human-variation/SD386613/Methylation_Analysis$ sort -k1,1 -k2,2n wf_mods.2.merged.bedGraph > wf_mods.2.merged.sorted.bedGraph
+(base) lix33@NCI-02294434-ML:~/lxwg/ad-hoc/ONT/Results/wf-human-variation/SD386613/Methylation_Analysis$ ./bedGraphToBigWig wf_mods.2.merged.sorted.bedGraph hg38.chrom.sizes wf_mods.2.bw
 ```
 
