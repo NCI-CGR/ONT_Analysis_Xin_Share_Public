@@ -70,3 +70,20 @@ chmod +x bedGraphToBigWig
 sudo mv bedGraphToBigWig /usr/local/bin/
 ```
 
+2. Convert methylated bed file into the standard bed file that can be processed by "bedGraphToBigWig"
+```
+(base) lix33@NCI-02294434-ML:~/lxwg/ad-hoc/ONT/Results/wf-human-variation/SD386613/Methylation_Analysis$ sort -k1,1 -k2,2n wf_mods.1.bedGraph > wf_mods.1.sorted.bedGraph
+(base) lix33@NCI-02294434-ML:~/lxwg/ad-hoc/ONT/Results/wf-human-variation/SD386613/Methylation_Analysis$ sort -k1,1 -k2,2n wf_mods.2.bedGraph > wf_mods.2.sorted.bedGraph
+```  
+
+3. Merge overlap bed regions to make UCSC tool works
+```
+(1) Merge overlapped regions
+(2) sort merged bed file
+(3) convert bed file to bigwig file 
+
+(base) lix33@NCI-02294434-ML:~/lxwg/ad-hoc/ONT/Results/wf-human-variation/SD386613/Methylation_Analysis$ bedtools merge -i wf_mods.1.sorted.bedGraph -c 4 -o mean > wf_mods.1.merged.bedGraph
+(base) lix33@NCI-02294434-ML:~/lxwg/ad-hoc/ONT/Results/wf-human-variation/SD386613/Methylation_Analysis$ sort -k1,1 -k2,2n wf_mods.1.merged.bedGraph > wf_mods.1.merged.sorted.bedGraph
+(base) lix33@NCI-02294434-ML:~/lxwg/ad-hoc/ONT/Results/wf-human-variation/SD386613/Methylation_Analysis$ ./bedGraphToBigWig wf_mods.1.merged.sorted.bedGraph hg38.chrom.sizes wf_mods.1.bw
+```
+
