@@ -15,3 +15,8 @@ This is a pipeline that be used for all-way methylation analysis
 ```
 https://github.com/NyagaM/ont-methylDMR-kit
 ```
+### Notifications
+1. only 5mC dmrs can be plotted at the moment
+   * it supports haplotype-specific DMR plotting
+   * it supports DMRs between two samples
+   * it does NOT supoort plotting DMRs from group analysis
