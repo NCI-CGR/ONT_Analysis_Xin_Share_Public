@@ -51,3 +51,39 @@ https://github.com/NyagaM/ont-methylDMR-kit
    * it supports haplotype-specific DMR plotting
    * it supports DMRs between two samples
    * it does NOT supoort plotting DMRs from group analysis
+
+## Three usefull sub-running modes
+### To run the end-to-end DMR analysis workflow between between two haplotypes:
+```
+nextflow run ont-methylDMR-kit/main.nf -profile singularity \
+  --pileup \
+  --plot \
+  --phased_mC \ # or --phased_mA or --phased_hmC
+  --phased_modBam /path/to/phased modBam for the sample \
+  --output_dir /path/to/write output \
+  --reference /path/to/ref genome \
+  --gene_list /path/to/gene_list.txt  # if not provided, all regions will be plotted or use --imprinted to plot across imprinted genes
+```
+### To run DMR analysis from bedmethyls as the starting point between between two haplotypes (the output from modkit)
+```
+nextflow run ont-methylDMR-kit/main.nf -profile singularity \
+  --input_file1 /path/to/bedmethyl file for haplotype 1 \
+  --input_file2 /path/to/bedmethyl file for haplotype 2 \
+  --phased_mC \ # or --phased_mA or --phased_hmC
+  --phased_modBam /path/to/phased modBam for the sample \
+  --output_dir /path/to/write output \
+  --gene_list /path/to/gene_list.txt  or --imprinted  # if not provided, all regions will be plotted
+  ##--reference provide a reference to plot DMRs using methylartist as well
+```
+### To run plots-only mode for DMRs identified between haplotypes
+```
+nextflow run ont-methylDMR-kit/main.nf -profile singularity \
+  --plots-only \
+  --phased_mC \ # or --phased_mA or --phased_hmC
+  --annotated_dmrs /path/to/dmrs_table_annotated.bed \
+  --phased_modBam /path/to/phased modBam for the sample \
+  --output_dir /path/to/write output \
+  --gene_list /path/to/gene_list.txt or --imprinted # if not provided, all regions will be plotted
+  ##--reference provide a reference to plot DMRs using methylartist as well
+```
+
