@@ -1,4 +1,5 @@
-## Other Methylation detection tool explor
+# Other Methylation detection tool explore
+## DMR and DML analysis
 ### DSS
 1. Introduction
 ```
@@ -10,4 +11,23 @@ BS-seq DM analysis for two group comparision, multi-factor design, and data with
 2. Online Repo
 ```
 https://bioconductor.org/packages/release/bioc/vignettes/DSS/inst/doc/DSS.html
+```
+## Visualization
+### modbamtools
+1. Introduction
+```
+A set of tools to manipulate and visualize data from base modification bam files
+```
+2. Online Repo
+```
+https://github.com/rrazaghi/modbamtools
+```
+### methylartist
+1. Introduction
+```
+Tools for parsing and plotting methylation patterns
+```
+2. Online Repo
+```
+https://github.com/adamewing/methylartist
 ```
