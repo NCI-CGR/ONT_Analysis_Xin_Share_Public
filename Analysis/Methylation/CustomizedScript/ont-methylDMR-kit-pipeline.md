@@ -87,3 +87,34 @@ nextflow run ont-methylDMR-kit/main.nf -profile singularity \
   ##--reference provide a reference to plot DMRs using methylartist as well
 ```
 
+## Thresholds used by ont-methylDMR-kit to generate DMR plots
+```
+Thresholds used by ont-methylDMR-kit to generate DMR plots
+
+When you run ont-methylDMR-kit, it first uses DSS (a differential methylation tool) to identify statistically significant DMRs.
+Only regions passing certain thresholds will be plotted in the dmr plot step.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>
+Default thresholds (can be customized):
+
+Methylation difference (delta): ≥ 10% (|Δmethylation| ≥ 0.10)
+
+Statistical significance: p-value ≤ 0.01 (from DSS)
+
+Region length: ≥ 100 bp
+
+CpG count within region: ≥ 10
+
+Merge distance: < 100 bp (adjacent DMRs closer than this are merged)
+<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Plotting rules:
+
+Only DMRs that pass these thresholds and are successfully annotated will be plotted with modbamtools.
+
+Supports plotting for sample pairs or haplotype pairs (requires corresponding modBAM files).
+
+Does not directly support group-wise DMR plotting.
+
+You can restrict plotting to specific genes with the --gene_list option.
+```
