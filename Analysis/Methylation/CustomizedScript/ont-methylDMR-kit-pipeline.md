@@ -1,4 +1,4 @@
-## Outline
+# Outline
 - [ont-methylDMR-kit](#ont-methylDMR-kit)
   - [How to use it](#How-to-use-it)
 
