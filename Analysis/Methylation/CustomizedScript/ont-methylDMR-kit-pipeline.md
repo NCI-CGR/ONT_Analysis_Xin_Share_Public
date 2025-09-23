@@ -1,7 +1,12 @@
+## Outline
+- [ont-methylDMR-kit](#ont-methylDMR-kit)
+  - [How to use it](#How-to-use-it)
+
+
 # ont-methylDMR-kit
 This is a pipeline that be used for all-way methylation analysis
 
-## How to use it
+## How-to-use-it
 ### From modkit pileup mode
 ```
 # First download and index the ref genome
