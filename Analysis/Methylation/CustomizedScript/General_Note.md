@@ -1,5 +1,6 @@
 # Outline
   - [Description of bedMethyl output](#Bedmethyl_Overview)
+  - [Description of DMR output](#DMR_BED_Overview)
   - [Other](#Other)
 
 # Bedmethyl_Overview
@@ -76,7 +77,7 @@ The modification calls table follows immediately after the totals table.
 | 6      | all_frac   | fraction of all calls for the modification in column 2                                   | float |
 
 
-# Bedmethyl_Overview
+# DMR_BED_Overview
 dmr regions overview (from modkit)
 ## Definitions
 The output from modkit dmr pair (and for each pairwise comparison with modkit dmr multi) is (roughly) a BED file with the following schema:
