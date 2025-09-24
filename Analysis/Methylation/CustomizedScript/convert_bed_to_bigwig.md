@@ -56,6 +56,11 @@ The file `methylation.bigWig` is ready for use in:
 - [IGV](https://software.broadinstitute.org/software/igv/)
 - [UCSC Genome Browser](https:/)
 
+### IGV
+Import bigwig files (from different haplotype) into IGV and set the data range (max log scale)
+<img width="1512" height="583" alt="image" src="https://github.com/user-attachments/assets/c882d448-5aa1-429b-9759-e732cb6db515" />
+
+
 ## Reference
 1. Where to download UCSC tool: bedGraphToBigWig
 ```
