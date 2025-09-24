@@ -1,6 +1,7 @@
 # Outline
   - [Description of bedMethyl output](##Bedmethyl_Overview)
   - [Other](##Other)
+
 ## Bedmethyl_Overview
 **Description of bedMethyl output**
 
