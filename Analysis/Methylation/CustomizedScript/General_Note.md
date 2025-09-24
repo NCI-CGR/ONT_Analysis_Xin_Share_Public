@@ -1,6 +1,6 @@
 # Outline
   - [Description of bedMethyl output](#Bedmethyl_Overview)
-  - [Other](##Other)
+  - [Other](#Other)
 
 # Bedmethyl_Overview
 **Description of bedMethyl output**
@@ -76,5 +76,20 @@ The modification calls table follows immediately after the totals table.
 | 6      | all_frac   | fraction of all calls for the modification in column 2                                   | float |
 
 
-## Other
+# Bedmethyl_Overview
+dmr regions overview (from modkit)
+## Definitions
+The output from modkit dmr pair (and for each pairwise comparison with modkit dmr multi) is (roughly) a BED file with the following schema:
+<img width="880" height="655" alt="image" src="https://github.com/user-attachments/assets/d6063831-3975-442c-97c5-1ecda4a6b15f" />
+
+
+## Example
+### Pre-defined-bed-based DMR Table
+<img width="617" height="192" alt="image" src="https://github.com/user-attachments/assets/fd98e844-7c43-48a4-a0ce-1fc51f35155b" />
+
+### Denovo-based DMR Table
+<img width="617" height="139" alt="image" src="https://github.com/user-attachments/assets/a7a3ebc1-c879-4044-83eb-2a57af1d9f10" />
+
+
+# Other
 1. We are more focus on haplotype-specific DMRs in current stage
