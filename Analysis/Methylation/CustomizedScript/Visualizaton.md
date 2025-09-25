@@ -12,5 +12,9 @@ Personal Mac: /Users/lix33/lxwg/ad-hoc/ONT/Results/ont-methylDMR-kit/SD386613/ou
 
 <img width="1277" height="463" alt="image" src="https://github.com/user-attachments/assets/60d873aa-acd0-4083-869a-39c740b4c98c" />
 
+## Report
+[Uploading dmr_summary_report.html…]()
+
+
 ## Example
 <img width="613" height="339" alt="image" src="https://github.com/user-attachments/assets/ff337401-e140-4667-8a0e-b1d663f52801" />
