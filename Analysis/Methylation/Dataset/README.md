@@ -1,4 +1,4 @@
-## Dataset
+## Dataset (Public)
 
 1. The BAM files of WGS-scale
 ```
@@ -19,3 +19,12 @@ https://42basepairs.com/browse/s3/ont-open-data/giab_2025.01/analysis/wf-human-v
    * Ensure Modified Base Calling Is Enabled
    * Check that your output BAM includes **MM** and **ML** tags for methylation.
 
+## Dataset (CGR)
+1. SD386613 (cram)
+```
+/DCEG/Projects/Exome/SequencingData/DAATeam/Xin/ad_hoc/ONT/Run/SD386613/output/SD386613.haplotagged.cram
+```
+2. SD407538 (cram)
+```
+/DCEG/Projects/Exome/SequencingData/DAATeam/Xin/ad_hoc/ONT/Run/SD407538/output/SD407538.haplotagged.cram
+```
