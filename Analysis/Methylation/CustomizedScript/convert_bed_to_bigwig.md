@@ -1,3 +1,4 @@
+# How to create bigwag
 ## 🧬 Step-by-Step: Convert `bedMethyl` to `.bigWig` Format
 
 If you're using ONT's `wf-human-variation` pipeline with `--call_mods true`, methylation data is typically output in **BEDMethyl** format. This guide shows you how to convert it to `.bigWig` for visualization in genome browsers.
@@ -61,7 +62,18 @@ Import bigwig files (from different haplotype) into IGV and set the data range (
 <img width="1512" height="583" alt="image" src="https://github.com/user-attachments/assets/c882d448-5aa1-429b-9759-e732cb6db515" />
 
 
-## Reference
+# Results
+1. SD386613 (CGR Cluster)
+```
+/DCEG/Projects/Exome/SequencingData/DAATeam/Xin/ad_hoc/ONT/Run/SD386613/output/Methylation_Analysis
+
+haplotype 1: wf_mods.1.bw
+haplotype 2: wf_mods.2.bw
+```
+<img width="1924" height="890" alt="image" src="https://github.com/user-attachments/assets/891b247c-51e1-4af7-a6f7-f5612584713c" />
+
+
+# Reference
 1. Where to download UCSC tool: bedGraphToBigWig
 ```
 🔽 Download for Linux:
