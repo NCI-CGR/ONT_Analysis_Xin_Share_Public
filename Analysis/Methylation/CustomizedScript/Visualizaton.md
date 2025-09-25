@@ -1,5 +1,6 @@
-<img width="321" height="115" alt="image" src="https://github.com/user-attachments/assets/9e4c5728-7e3c-4acb-ba49-e11c692a4663" /># Outline
+# Outline
 - [Visualization based on ModBamTools](#ModBamTools)
+
 # ModBamTools
 ## Online Repo
 ```
