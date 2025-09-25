@@ -26,4 +26,5 @@ https://github.com/NCI-CGR/ONT_Analysis_Xin_Share_Pubic/blob/main/Analysis/Methy
 
 
 ## Example
-<img width="613" height="339" alt="image" src="https://github.com/user-attachments/assets/ff337401-e140-4667-8a0e-b1d663f52801" />
+<img width="1026" height="567" alt="Screenshot 2025-09-24 at 9 03 26 PM" src="https://github.com/user-attachments/assets/a77dfdca-4478-4c78-94f3-223394b4ec58" />
+
