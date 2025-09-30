@@ -30,3 +30,17 @@ https://tracker.nci.nih.gov/browse/CGRBI-242
    1) The number of entries in dmrs_table.bed
    2) average length of these regions
 ```
+## Jobs 
+### Issues 
+1. The BAM downloaded from ONT online Repo (e.g. HG002)
+   * missing some required "@PG" group information
+   * does contain "SM" tag in "@RG" group, however the name is not expected (e.g. hg002)
+2. The BAM from CGR (SD3, SD4)
+   * missing "SM" tag in "@RG" group
+
+### Pipeline
+1. Time cost is out of default settings
+
+
+### Coverage 
+1. SD
