@@ -38,13 +38,14 @@ https://tracker.nci.nih.gov/browse/CGRBI-242
 2. The BAM from CGR (SD3, SD4) -> question for kristie
    * missing "SM" tag in "@RG" group
 
-### Pipeline
+### Notification
 1. Time cost is out of default settings (2 hours limitation)
 ```
 Execution cancelled -- Finishing pending tasks before exit ERROR ~ Error executing process > 'modkit_phased_mC (1)' Caused by: Process exceeded running time limit (2h) Command executed: # compute sample probabilities probs=$( modkit sample-probs HG002.PAW70337.sorted.bam \ -p 0.1 \ --interval-size 5000000 \ --only-mapped \ --threads 24 \ 2> /dev/null | awk 'NR>1 {ORS=" "; print "--filter-threshold "$1":"$3}' ) # run modkit pileup for phased 5mC modkit pileup \ --ref GRCh38.p2.maimcontigs.fa \ --interval-size 1000000 \ --log-filepath modkit_phased_HG002.PAW70337.sorted.log \ ${probs} \ --prefix HG002.PAW70337.sorted_5mC \ --partition-tag HP \ --combine-strands \ --cpg \ --threads 24 \ HG002.PAW70337.sorted.bam \ HG002.PAW70337.sorted mv HG002.PAW70337.sorted/*.bed ./ # Move the output files to the current directory Command exit status: - Command output: (empty) Command error: WARNING: group: unknown groupid 20010 > calculated chunk size: 36, interval size 1000000, processing 36000000 positions concurrently > filtering to only CpG motifs > creating HG002.PAW70337.sorted > using threshold 0.7285156 for base A > using threshold 0.72265625 for base C > no default pass threshold was provided, so base modifications at primary sequence bases other than A,C will not be filtered > Using filter threshold 0.7285156 for A. > Using filter threshold 0.72265625 for C. Work dir: /mnt/nfs/gigantor/ifs/DCEG/Projects/Exome/SequencingData/DAATeam/Xin/ad_hoc/ONT/Run/ont-methylDMR-kit/HG002/PAW70337/work/71/24fe67d0f9ee4081f68ac54d06382f
 ```
 2. HiPhase can not handle the BAM missing "SM"
 3. wf-human-vairant cannot handle the BAM missing some "@PG" info
+4. chr1-chr22 won't have phasing info
 
 
 ### Coverage 
