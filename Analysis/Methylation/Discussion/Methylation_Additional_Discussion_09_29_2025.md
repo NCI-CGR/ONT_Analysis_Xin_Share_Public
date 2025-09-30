@@ -43,4 +43,14 @@ https://tracker.nci.nih.gov/browse/CGRBI-242
 
 
 ### Coverage 
-1. SD
+1. SD386613
+<img width="1108" height="411" alt="image" src="https://github.com/user-attachments/assets/e5577156-386e-45b4-9901-786b4fe40f90" />
+
+2. SD407538
+<img width="1132" height="410" alt="image" src="https://github.com/user-attachments/assets/3b7ddeec-08f7-4fe3-8dee-6c11df356ae3" />
+
+3. HG002
+<img width="1177" height="414" alt="image" src="https://github.com/user-attachments/assets/7bd2546d-00db-4cfc-8ed3-9594a1773a64" />
+
+
+
