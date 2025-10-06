@@ -54,5 +54,10 @@ Original:
 Backup:
 /DCEG/Projects/Exome/SequencingData/DAATeam/Xin/ad_hoc/ONT/Run/MinKnow/SD407538/report_PBE54594_20250701_1810_26fb9d5f.html
 ```
+## Statistical Table
+| | SD386613 | SD407538 | Commnets |
+| :--  | :--      | :--   | :--   | 
+| on-target| 0 | 0 | |
+| off-taget | 0 | 0 | |
 
 
