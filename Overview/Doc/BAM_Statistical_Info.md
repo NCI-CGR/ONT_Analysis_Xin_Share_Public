@@ -57,6 +57,7 @@ Backup:
 ## Statistical Table
 | | SD386613 | SD407538 | Commnets |
 | :--  | :--      | :--   | :--   | 
-| on-target reads | 0 | 2380591 | <br>(1)based on cram <br>(2)cram is from wf-human-variant pipeline <br>(3)total number of unique reads in chrX |
-| off-taget reads | 0 | 0 | <br>(1)based on cram <br>(2)cram is from wf-human-variant pipeline <br>(3)(total number of reads) - ("on-target" reads) |
+| on-target reads |  | 2380591 | <br>(1)based on cram <br>(2)cram is from wf-human-variant pipeline <br>(3)total number of unique reads in chrX |
+| off-taget reads | 0 | 57046206 | <br>(1)based on cram <br>(2)cram is from wf-human-variant pipeline <br>(3)(total number of reads) - ("on-target" reads) |
+| total reads | 0 | 59426797 |  |
 
