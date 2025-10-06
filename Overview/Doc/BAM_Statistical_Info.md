@@ -54,10 +54,20 @@ Original:
 Backup:
 /DCEG/Projects/Exome/SequencingData/DAATeam/Xin/ad_hoc/ONT/Run/MinKnow/SD407538/report_PBE54594_20250701_1810_26fb9d5f.html
 ```
+
+### Other Running Results 
+1. on-target, off-target, total reads 
+```
+/DCEG/Projects/Exome/SequencingData/DAATeam/Xin/ad_hoc/ONT/Run/customized_script/BAM_Report
+```
+
 ## Statistical Table
-| | SD386613 | SD407538 | Commnets |
-| :--  | :--      | :--   | :--   | 
-| on-target reads |  | 2380591 | <br>(1)based on cram <br>(2)cram is from wf-human-variant pipeline <br>(3)total number of unique reads in chrX |
-| off-taget reads | 0 | 57046206 | <br>(1)based on cram <br>(2)cram is from wf-human-variant pipeline <br>(3)(total number of reads) - ("on-target" reads) |
-| total reads | 0 | 59426797 |  |
+| | SD386613 | SD407538 | Definition | Commnets |
+| :--  | :--      | :--   | :--   | :--   | 
+| On-target reads |  | 2380591 | Number of reads be assgined to chrX (bed file) | <br>(1)based on cram <br>(2)cram is from wf-human-variant pipeline <br>(3)total number of unique reads in chrX |
+| Off-taget reads | 0 | 57046206 | Number of reads NOT be assgined to chrX |<br>(1)based on cram <br>(2)cram is from wf-human-variant pipeline <br>(3)(total number of reads) - ("on-target" reads) |
+| Total reads | 0 | 59426797 | Total number of reads | <br>(1)based on cram <br>(2)cram is from wf-human-variant pipeline (3)total number of unique reads |
+| Accepted reads | 0 | 59426797 | Total number of reads | <br>(1)based on cram <br>(2)cram is from wf-human-variant pipeline (3)total number of unique reads |
+| Rejected reads | | | | 
+
 
