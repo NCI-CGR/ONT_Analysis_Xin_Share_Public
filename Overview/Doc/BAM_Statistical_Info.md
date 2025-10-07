@@ -76,7 +76,7 @@ Backup:
 | <br>(1)Accepted reads <br>(2)High Quality Reads <br>(3)Low Quality Reads | <br>22.27M <br>19.89M <br>2.38M | <br>11.25M <br>8.73M <br>2.52M | <br>(1)Reads accepcted by **fast basecall** <br>(2) Based on the provided BED file <br>(3)**Pass**: Out of those Q≥8 reads, and passed all the basecaller’s quality filters <br>(4)**Fail**: Q≥8 but failed other filters (such as being too short, or failing signal-level filtering)| <br>(1)based on **MinKnow Report** <br>(2)High Quality Reads: Pass <br>(3)Low Quality Reads: Fail |
 | Rejected reads | (Total based called reads)- (Accepted reads) | (Total based called reads)- (Accepted reads) | | Based on toullingQC and MinKnow Report|
 | Sample mean coverage (all chroms) | 26.373x | 12.218x | | <br>Based on wf-human-variant pipeline **without** BED file|
-| Sample mean coverage (chrX) | 159.501x | 34.452x | | <br>Based on wf-human-variant pipeline **with** BED file|
+| Sample mean coverage (chrX) | 159.501x | 34.452x | | <br>Based on wf-human-variant pipeline **without** BED file|
 
 
 
