@@ -1,6 +1,6 @@
 # T2T-based Analysis
 In this doc we will introduce how to use T2T-reference to run the wf-humane-variant pipeline
-## Input preparation
+## Inputs Preparation
 ### BED File
 The original bed file we got is based on hg38, we need to lift it over to T2T-based bed file.
 1. T2T-based BED
@@ -13,7 +13,7 @@ The original bed file we got is based on hg38, we need to lift it over to T2T-ba
 
 Please check READNE.txt in the same folder for more details
 ```
-### uBAM
+### uBAMs
 1. The wf-human-variant pipeline cannot take fastq.gz as an input.
 2. The input should be either .bam or .ubam. For our case, we do need to use T2T reference to do the alignmnet again.
 3. We only have fastq.gz and need to covert it to .ubam
@@ -36,7 +36,7 @@ Please check READNE.txt in the same folder for more details
 
 Please check READNE.txt in the same folder for more details
 ```
-## How to run the pipeline
+## How to Run the Pipeline
 1. SD386613
 ```
 /DCEG/Projects/Exome/SequencingData/DAATeam/Xin/ad_hoc/ONT/Run/T2T/wf-human-variant/SD386613_With_Bed/job.sh
