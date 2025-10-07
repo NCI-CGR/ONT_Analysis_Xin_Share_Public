@@ -1,4 +1,4 @@
-# T2T-based analysis
+# T2T-based Analysis
 In this doc we will introduce how to use T2T-reference to run the wf-humane-variant pipeline
 ## Input preparation
 ### BED File
