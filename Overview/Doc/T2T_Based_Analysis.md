@@ -54,3 +54,5 @@ Please check READNE.txt in the same folder for more details
 ```
 /DCEG/Projects/Exome/SequencingData/DAATeam/Xin/ad_hoc/ONT/Run/T2T/wf-human-variant/SD407538_With_Bed/output
 ```
+### NOTICE
+All jobs are still running, and I will update this doc once everything is all set.
