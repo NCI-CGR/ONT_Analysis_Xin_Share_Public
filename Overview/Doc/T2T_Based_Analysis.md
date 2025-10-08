@@ -64,6 +64,52 @@ https://s3-us-west-2.amazonaws.com/human-pangenomics/T2T/CHM13/assemblies/annota
 
 Please check READNE.txt in the same folder for more details
 ```
+## Script Example
+1. how to run nextflow
+```
+CMD="nextflow run ${DIRScript} \
+	 --bam ${DIRData} \
+	 --ref '${reference}' \
+	 --bed '${bedfile}' \
+	 --sample_name '${sampleName}' \
+	 -c ${configFile} \
+	 --snp \
+	 --sv \
+	 --mod \
+	 --phased \
+	 -profile singularity"
+```
+2. nextflow.config
+```
+singularity {
+    enabled = true
+    autoMounts = true
+    cacheDir = '/mnt/nfs/gigantor/ifs/DCEG/Projects/Exome/SequencingData/DAATeam/Xin/ad_hoc/ONT/SingularityCache' 
+    runOptions = "--bind /DCEG/Projects/Exome/SequencingData/DAATeam/Xin/ad_hoc/ONT/TMP"
+}
+
+docker.enabled = false
+
+process {
+  //container = 'docker://ontresearch/wf-human-variation-sv:sha8134f9fef5e19605c7fb4c1348961d6771f1af79'
+  executor = 'local'  // 或者 'slurm' / 'pbs' / 'sge' 根据你的系统调整
+  containerEngine = 'singularity'
+  // errorStrategy = 'retry'
+}
+
+params {
+    snp = true
+    sv = true
+    mod = true
+    cnv = false
+    phased = true
+    //ref = "/DCEG/CGF/Bioinformatics/Production/data/T2T/NCBI/GCF_009914755.1_T2T-CHM13v2.0_genomic.fna" 
+    ref = "/DCEG/CGF/Bioinformatics/Production/data/T2T/UCSC/hs1.fa"
+    bed = "/DCEG/Projects/Exome/SequencingData/DAATeam/Xin/ad_hoc/ONT/Data/Dependence/T2T/T2T_chrX_regionwise.bed" 
+    sample_name = "SD386613"
+}
+```
+
 ## How to Run the Pipeline
 1. SD386613
 ```
