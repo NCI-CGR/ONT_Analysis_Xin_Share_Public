@@ -92,7 +92,7 @@ docker.enabled = false
 
 process {
   //container = 'docker://ontresearch/wf-human-variation-sv:sha8134f9fef5e19605c7fb4c1348961d6771f1af79'
-  executor = 'local'  // 或者 'slurm' / 'pbs' / 'sge' 根据你的系统调整
+  executor = 'local'
   containerEngine = 'singularity'
   // errorStrategy = 'retry'
 }
