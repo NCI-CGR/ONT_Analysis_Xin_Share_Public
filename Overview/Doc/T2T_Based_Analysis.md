@@ -13,6 +13,10 @@ The original bed file we got is based on hg38, we need to lift it over to T2T-ba
 
 Please check READNE.txt in the same folder for more details
 ```
+3. The perfect bed file can be downloaded from the link below
+```
+https://s3-us-west-2.amazonaws.com/human-pangenomics/T2T/CHM13/assemblies/annotation/chm13v2.0_cytobands_allchrs.bed
+```
 ### uBAMs
 1. The wf-human-variant pipeline cannot take fastq.gz as an input.
 2. The input should be either .bam or .ubam. For our case, we do need to use T2T reference to do the alignmnet again.
