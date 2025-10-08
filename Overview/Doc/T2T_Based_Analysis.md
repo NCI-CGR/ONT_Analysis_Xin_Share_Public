@@ -1,5 +1,29 @@
 # T2T-based Analysis
 In this doc we will introduce how to use T2T-reference to run the wf-humane-variant pipeline
+## Original Email
+<img width="2500" height="1406" alt="image" src="https://github.com/user-attachments/assets/ebba64dd-13e1-4064-bc08-ad1bf1f31040" />
+
+```
+Hi Komal,
+
+Here is the slide we discussed. The full documentation for the workflow steps can also be
+found here: https://github.com/epi2me-labs/wf-human-variation?tab=readme-ov-file#pipeline-overview
+
+We do not have a specific ONT recommended T2T reference genome, but this one should work:
+https://hgdownload.soe.ucsc.edu/goldenPath/hs1/bigZips/hs1.fa.gz or you can download the full NCBI
+RefSeq version here: Homo sapiens genome assembly T2T-CHM13v2.0 - NCBI - NLM. If you use the T2T reference
+be aware that there are parts of the wf-human-variation workflow that will not work. There is a summary
+table for this in the documentation:
+https://github.com/epi2me-labs/wf-human-variation?tab=readme-ov-file#10-genome-compatibility-and-running-the-workflow-on-non-human-genomes.
+Specifically – CNV, STR calling, and annotation will not work and should be disabled.
+
+-Rob
+Field Bioinformatics Scientist
+rob.harbert@nanoporetech.com
+```
+## Notice
+CNV, STR calling, and annotation will not work and should be disabled.
+
 ## Inputs Preparation
 ### BED File
 The original bed file we got is based on hg38, we need to lift it over to T2T-based bed file.
