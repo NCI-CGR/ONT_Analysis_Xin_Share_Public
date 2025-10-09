@@ -48,7 +48,7 @@ we just have 12.218x
 # Follow-up Questions (Xin's part)
 ## Phasing Tool used by the wf-humane-variant pipeline
 1. **Whatshap** be used by the pipeline for phasing
-2. However, we cannot find the the infomation related to "Whatshap" in the SD386613.haplotagged.cram and phased variant calling results, such as
+2. However, we cannot find the the infomation related to "Whatshap" in the haplotagged cram and phased variant calling results, such as
    * SD386613.haplotagged.cram
    * SD386613.wf_snp.vcf.gz
    * SD386613.wf_sv.vcf.gz
