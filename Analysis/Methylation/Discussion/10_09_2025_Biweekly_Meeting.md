@@ -44,6 +44,7 @@ we just have 12.218x
    * This info will be used for SNP and small variant calling.
    * the pieline does not care about modbase_models
 
+
 # Follow-up Questions (Xin's part)
 ## Phasing Tool used by the wf-humane-variant pipeline
 1. **Whatshap** be used by the pipeline for phasing
