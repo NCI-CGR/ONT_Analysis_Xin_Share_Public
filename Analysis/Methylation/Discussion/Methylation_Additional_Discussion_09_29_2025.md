@@ -49,6 +49,8 @@ Execution cancelled -- Finishing pending tasks before exit ERROR ~ Error executi
 
 
 ### Coverage 
+**NOTICE**: Please use **Whatshap** to replace **highphase** in the screenshot below
+
 1. SD386613
 <img width="1108" height="411" alt="image" src="https://github.com/user-attachments/assets/e5577156-386e-45b4-9901-786b4fe40f90" />
 
