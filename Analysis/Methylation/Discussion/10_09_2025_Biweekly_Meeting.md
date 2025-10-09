@@ -17,7 +17,7 @@ we just have 12.218x
 2. We need to set it to "false" manually to disable it.
 
 ## About uBAM
-1. For some cases, we plan to do customized alignment again in the human-variant-pipeline
+1. For some cases, we plan to do customized-alignment again through the human-variant-pipeline
 2. The pipeline only accept uBAM and BAM not fastq
    * The reason is that some additional tag info (e.g., methylation info (MM, ML) tag) should be kept for downstream analysis
    * uBAM is much better than fastq to keep, save and extract these tag info.
@@ -53,7 +53,7 @@ we just have 12.218x
    * SD386613.wf_snp.vcf.gz
    * SD386613.wf_sv.vcf.gz
 3. **Question**
-   * If it is possible for us to find the phasing tool name and the command line used for phasing through one of the pieline outputs?
+   * If it is possible for us to find the "phasing tool name" and "the command line used for phasing" through one of the pieline outputs?
 
 ## About longphase
 1. The "longphase" is mentioned in the website below
@@ -62,9 +62,9 @@ https://nanoporetech.com/document/epi2me-workflows/wf-human-variation
 ```
 <img width="784" height="395" alt="image" src="https://github.com/user-attachments/assets/2081068d-4002-426d-8819-51aed743c58d" />
 
-2. I checked the help doc for the latest version of human-variant-pipeline and there is no option called "--use_longphase"
+2. I checked the help doc from the latest version of human-variant-pipeline and there is no option called "--use_longphase"
 
 3. **Question**
   * Could you help me confirm that if the longphase is still an optional phasing tool that can be used for the pipeline?
-  * if it is possible for us set other phasing tool (e.g. HiPhase) to run the wf-humane-variant pipeline? 
+  * if it is possible for us setup other phasing tool (e.g. HiPhase) to run the wf-humane-variant pipeline? 
 
