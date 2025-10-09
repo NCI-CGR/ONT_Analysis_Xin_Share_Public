@@ -51,7 +51,7 @@ we just have 12.218x
    * SD386613.haplotagged.cram
    * SD386613.wf_snp.vcf.gz
    * SD386613.wf_sv.vcf.gz
-3. Question
+3. **Question**
    * If it is possible for us to find the phasing tool name and the command line used for phasing through one of the pieline outputs?
 
 ## About longphase
@@ -60,8 +60,10 @@ we just have 12.218x
 https://nanoporetech.com/document/epi2me-workflows/wf-human-variation
 ```
 <img width="784" height="395" alt="image" src="https://github.com/user-attachments/assets/2081068d-4002-426d-8819-51aed743c58d" />
+
 2. I checked the help doc for the latest version of human-variant-pipeline and there is no option called "--use_longphase"
-3. Question
+
+3. **Question**
   * Could you help me confirm that if the longphase is still an optional phasing tool that can be used for the pipeline?
   * if it is possible for us set other phasing tool (e.g. HiPhase) to run the wf-humane-variant pipeline? 
 
