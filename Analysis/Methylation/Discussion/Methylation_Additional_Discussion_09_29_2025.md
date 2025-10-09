@@ -57,8 +57,23 @@ Execution cancelled -- Finishing pending tasks before exit ERROR ~ Error executi
 2. SD407538
 <img width="1132" height="410" alt="image" src="https://github.com/user-attachments/assets/3b7ddeec-08f7-4fe3-8dee-6c11df356ae3" />
 
-3. HG002
+3. HG002 (PAW70337)
 <img width="1177" height="414" alt="image" src="https://github.com/user-attachments/assets/7bd2546d-00db-4cfc-8ed3-9594a1773a64" />
 
+### DMR Analysis 
+The working directory
+```
+/DCEG/Projects/Exome/SequencingData/DAATeam/Xin/ad_hoc/ONT/Run/ont-methylDMR-kit
+```
 
+1. SD386613
+<img width="1259" height="598" alt="image" src="https://github.com/user-attachments/assets/5a6a5791-e70a-4faa-87c0-b5f974ebeea2" />
+
+
+2. SD407538
+<img width="1271" height="604" alt="image" src="https://github.com/user-attachments/assets/4dc86568-8f57-419e-aab8-1df4dbc1a9d5" />
+
+
+3. HG002 (PAW70337)
+<img width="1311" height="592" alt="image" src="https://github.com/user-attachments/assets/37a17cc5-f9a0-4688-9eb2-3252c559d86e" />
 
