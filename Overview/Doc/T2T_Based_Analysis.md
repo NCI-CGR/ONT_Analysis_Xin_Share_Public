@@ -25,7 +25,7 @@ rob.harbert@nanoporetech.com
 CNV, STR calling, and annotation will not work and should be disabled.
 
 ## Inputs Preparation
-### BED File
+### BED File (Lift-lover based)
 The original bed file we got is based on hg38, we need to lift it over to T2T-based bed file.
 1. T2T-based BED
 ```
@@ -37,10 +37,23 @@ The original bed file we got is based on hg38, we need to lift it over to T2T-ba
 
 Please check READNE.txt in the same folder for more details
 ```
-3. The perfect bed file can be downloaded from the link below
+3. Why the lift-over source code should be created
+   * Once the T2T reference be more popular and widely used in research community, we may need to life over some of our existing hg38-based capture kits to T2T-based capture kits. Therefore, for long-term purpose, it is necessary for us to create our own script to lift over hg38-based to T2T-based  bed file.
+   * Since the hg38-based bed file was provided by wet-lab, in order to keep everything be consistent, it may be a good idea to discuss with the wet-lab colleagues and use the same resources to grab the related T2T-based bed file.
+   * Since wet-lab is currently doing T2T-reference based adaptive sampling, the bed file and reference will be used for running. I more prefer to use the same bed file that wet-lab used for data analysis (not download from my side).
+   * I am currently more focus on how to make the pipeline be completed without error by using T2T reference, therefore, the most important thing from my side is making sure that the bed file is correct. The liftover bed is imperfect but should be 100% correct. 
+   
+### BED File (Download from internet directly)
+1. Since we consider all bases in chrX, the perfect bed file can be downloaded from the link below
 ```
 https://s3-us-west-2.amazonaws.com/human-pangenomics/T2T/CHM13/assemblies/annotation/chm13v2.0_cytobands_allchrs.bed
 ```
+
+2. File location and script in CGR cluster
+```
+/DCEG/Projects/Exome/SequencingData/DAATeam/Xin/ad_hoc/ONT/Data/Dependence/T2T/wise_region_bed_from_downloaded
+```
+
 ### uBAMs
 1. The wf-human-variant pipeline cannot take fastq.gz as an input.
 2. The input should be either .bam or .ubam. For our case, we do need to use T2T reference to do the alignmnet again.
@@ -120,13 +133,39 @@ params {
 /DCEG/Projects/Exome/SequencingData/DAATeam/Xin/ad_hoc/ONT/Run/T2T/wf-human-variant/SD407538_With_Bed/job.sh
 ```
 ## Running Results
+### Lift-over-bed-file-based results
 1. SD386613
 ```
-/DCEG/Projects/Exome/SequencingData/DAATeam/Xin/ad_hoc/ONT/Run/T2T/wf-human-variant/SD386613_With_Bed/output
+/DCEG/Projects/Exome/SequencingData/DAATeam/Xin/ad_hoc/ONT/Run/T2T/wf-human-variant/SD386613_With_Bed/output.liftover.bed.based
+
+job:
+/DCEG/Projects/Exome/SequencingData/DAATeam/Xin/ad_hoc/ONT/Run/T2T/wf-human-variant/SD386613_With_Bed/job.sh
 ```
+
 2. SD407538
 ```
-/DCEG/Projects/Exome/SequencingData/DAATeam/Xin/ad_hoc/ONT/Run/T2T/wf-human-variant/SD407538_With_Bed/output
+/DCEG/Projects/Exome/SequencingData/DAATeam/Xin/ad_hoc/ONT/Run/T2T/wf-human-variant/SD407538_With_Bed/output.liftover.bed.based
+
+job:
+/DCEG/Projects/Exome/SequencingData/DAATeam/Xin/ad_hoc/ONT/Run/T2T/wf-human-variant/SD407538_With_Bed/job.sh
 ```
+
+### Downloaded-bed-file-based results
+1. SD386613
+```
+/DCEG/Projects/Exome/SequencingData/DAATeam/Xin/ad_hoc/ONT/Run/T2T/wf-human-variant/SD386613_With_Bed/output.wise.region
+
+job:
+/DCEG/Projects/Exome/SequencingData/DAATeam/Xin/ad_hoc/ONT/Run/T2T/wf-human-variant/SD386613_With_Bed/job_real_wise_region_bed.sh
+```
+
+2. SD407538
+```
+/DCEG/Projects/Exome/SequencingData/DAATeam/Xin/ad_hoc/ONT/Run/T2T/wf-human-variant/SD407538_With_Bed/output.wise.region
+
+job:
+/DCEG/Projects/Exome/SequencingData/DAATeam/Xin/ad_hoc/ONT/Run/T2T/wf-human-variant/SD407538_With_Bed/job_real_wise_region_bed.sh
+```
+
 ### NOTICE
-All jobs are still running, and I will update this doc once everything is all set.
+All jobs have been completed successfully. Both Lift-over-bed-file-based results and Downloaded-bed-file-based results are ready to review.
