@@ -52,5 +52,26 @@ cat ./hg38.cen-mask.bed | grep -i 'chrX' > hg38.cen-mask.chrX.only.bed
 2. SD386613-T2T-Centeromere
 <img width="3600" height="1200" alt="image" src="https://github.com/user-attachments/assets/0b741117-1d2d-4725-a833-1882e73bf2bb" />
 
+```
+[INFO] Coverage plot saved to SD386613_chrX_T2T_samtools_depth_plot.png
+  chrom  position  depth
+0  chrX  57819764    150
+1  chrX  57819765    150
+2  chrX  57819766    150
+3  chrX  57819767    149
+4  chrX  57819768    151
+           position         depth
+count  3.107432e+06  3.107432e+06
+mean   5.937348e+07  1.619599e+02
+std    8.970385e+05  1.794680e+02
+min    5.781976e+07  0.000000e+00
+25%    5.859662e+07  4.500000e+01
+50%    5.937348e+07  1.160000e+02
+75%    6.015034e+07  2.020000e+02
+max    6.092720e+07  1.301000e+03
+Max depth: 1301
+Min depth: 0
+```
+
 3. Stacked Plots
 <img width="3600" height="1500" alt="image" src="https://github.com/user-attachments/assets/1cfceb1c-5ac8-45d6-a518-1120b8888611" />
