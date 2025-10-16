@@ -48,6 +48,27 @@ cat ./hg38.cen-mask.bed | grep -i 'chrX' > hg38.cen-mask.chrX.only.bed
 ### SD386613
 1. SD386613-hg38-Centeromere
 <img width="3600" height="1200" alt="image" src="https://github.com/user-attachments/assets/901ed42d-bcd9-4977-b431-a9422c9d3291" />
+
+```
+[INFO] Coverage plot saved to SD386613_chrX_hg38_samtools_depth_plot.png
+  chrom  position  depth
+0  chrX  58524641    153
+1  chrX  58524642    152
+2  chrX  58524643    152
+3  chrX  58524644    152
+4  chrX  58524645    152
+           position         depth
+count  3.981731e+06  3.981731e+06
+mean   6.051551e+07  1.268376e+02
+std    1.149427e+06  2.040075e+02
+min    5.852464e+07  0.000000e+00
+25%    5.952007e+07  2.600000e+01
+50%    6.051551e+07  5.900000e+01
+75%    6.151094e+07  1.430000e+02
+max    6.250637e+07  1.973000e+03
+Max depth: 1973
+Min depth: 0
+```
    
 2. SD386613-T2T-Centeromere
 <img width="3600" height="1200" alt="image" src="https://github.com/user-attachments/assets/0b741117-1d2d-4725-a833-1882e73bf2bb" />
