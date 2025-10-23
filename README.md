@@ -1,4 +1,4 @@
-# ONT_Analysis_Xin_Share_Pubic
+# ONT_Analysis_Xin_Share_Public
 This is the repository that shared with all CGR internal group members and our collaborators. 
 
 If you plan to post or update something that you believe may be private, please contact me (xin.li4@nih.gov) beforehand.
