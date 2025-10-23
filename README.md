@@ -50,4 +50,12 @@ If you plan to post or update something that you believe may be private, please 
                 ├── barcode01-based
                 └── barcode02-based
 ```
+## Notice
+1. Only production-level results will be in
+```
+/DCEG/CGF/Sequencing/ONT/Prom24/Bioinformatics
+```
+3. For all testing purpose results, they will be in
+```
 
+```
