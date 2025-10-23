@@ -4,7 +4,7 @@ This is the repository that shared with all CGR internal group members and our c
 If you plan to post or update something that you believe may be private, please contact me (xin.li4@nih.gov) beforehand.
 
 # Results
-## Wet lab running results
+## Wet Lab Running Results
 1. RawData
 ```
 /DCEG/CGF/Sequencing/ONT/Prom24/RawData
@@ -13,7 +13,7 @@ If you plan to post or update something that you believe may be private, please 
 ```
 /DCEG/CGF/Sequencing/ONT/Prom24/PostRun_Analysis
 ```
-## Bioinformatics analysis running results
+## Bioinformatics Analysis Running Results
 1. Main directory
 ```
 /DCEG/CGF/Sequencing/ONT/Prom24/Bioinformatics
