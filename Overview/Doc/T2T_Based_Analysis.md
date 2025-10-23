@@ -54,7 +54,20 @@ https://s3-us-west-2.amazonaws.com/human-pangenomics/T2T/CHM13/assemblies/annota
 /DCEG/Projects/Exome/SequencingData/DAATeam/Xin/ad_hoc/ONT/Data/Dependence/T2T/wise_region_bed_from_downloaded
 ```
 
-### uBAMs
+### Reference
+1. The reference and the bed file should be share the same way to name the chromosome. 
+2. THe chromosome name in the bed file we current using (e.g. chrX) is inconsistent with the NCBI T2T reference (e.g., NC_060947.1 Homo sapiens isolate CHM13 chromosome X, alternate assembly T2T-CHM13v2.0).
+3. As a result, I am currently using UCSC-verson T2T reference to run the pipeline
+```
+/DCEG/CGF/Bioinformatics/Production/data/T2T/UCSC/hs1.fa
+
+Please check READNE.txt in the same folder for more details
+```
+
+# Self-alignment0-based Analysis
+This analysis is based on the fastq files from hg38-based wetlab run. Then, we realign the reads to T2T reference through pipeline.
+
+## uBAMs
 1. The wf-human-variant pipeline cannot take fastq.gz as an input.
 2. The input should be either .bam or .ubam. For our case, we do need to use T2T reference to do the alignmnet again.
 3. We only have fastq.gz and need to covert it to .ubam
@@ -67,15 +80,6 @@ https://s3-us-west-2.amazonaws.com/human-pangenomics/T2T/CHM13/assemblies/annota
 (2) SD407538
 /DCEG/Projects/Exome/SequencingData/DAATeam/Xin/ad_hoc/ONT/Run/customized_script/uBAM_Convert/SD407538/uBAM
 /DCEG/Projects/Exome/SequencingData/DAATeam/Xin/ad_hoc/ONT/Run/customized_script/uBAM_Convert/SD407538/job.sh
-```
-### Reference
-1. The reference and the bed file should be share the same way to name the chromosome. 
-2. THe chromosome name in the bed file we current using (e.g. chrX) is inconsistent with the NCBI T2T reference (e.g., NC_060947.1 Homo sapiens isolate CHM13 chromosome X, alternate assembly T2T-CHM13v2.0).
-3. As a result, I am currently using UCSC-verson T2T reference to run the pipeline
-```
-/DCEG/CGF/Bioinformatics/Production/data/T2T/UCSC/hs1.fa
-
-Please check READNE.txt in the same folder for more details
 ```
 ## Script Example
 1. how to run nextflow
