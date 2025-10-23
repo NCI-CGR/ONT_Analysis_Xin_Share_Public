@@ -51,11 +51,11 @@ If you plan to post or update something that you believe may be private, please 
                 └── barcode02-based
 ```
 ## Notice
-1. Only production-level results will be in
+1. Only production-level results will be put in
 ```
 /DCEG/CGF/Sequencing/ONT/Prom24/Bioinformatics
 ```
-3. For all testing purpose results, they will be in
+2. For all testing purpose results, they will be in
 ```
-
+/DCEG/Projects/Exome/SequencingData/DAATeam/Xin/ad_hoc/ONT/Run
 ```
