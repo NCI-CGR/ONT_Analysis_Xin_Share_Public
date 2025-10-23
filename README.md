@@ -22,10 +22,13 @@ If you plan to post or update something that you believe may be private, please 
    * Experiment
    * Pipeline + Version
    * SampleName/Barcode/General-description
+3. Please check the README file for more details inside each experiement folder.
+
 ```
 ./Bioinformatics/
 └── Experiment
     ├── 20250701_1804_1C_PBE55027_8e8920e8
+    │   ├── README.txt
     │   ├── wf-human-variant
     │   │   └── v2.7.2
     │   │       └── SD386613
@@ -33,6 +36,7 @@ If you plan to post or update something that you believe may be private, please 
     │       └── v1.3
     │           └── Flowcell-level
     ├── 20250701_1804_1F_PBE54594_26fb9d5f
+    │   ├── README.txt
     │   ├── wf-human-variant
     │   │   └── v2.7.2
     │   │       └── SD407538
@@ -40,6 +44,8 @@ If you plan to post or update something that you believe may be private, please 
     │       └── v1.3
     │           └── Flowcell-level
     └── 20251007_1416_2E_PBE95329_69e83be9
+        ├── 20251007_1416_2E_PBE95329_69e83be9_samplesheet.csv
+        ├── README.txt
         ├── wf-human-variant
         │   └── v2.7.2
         │       ├── barcode01
