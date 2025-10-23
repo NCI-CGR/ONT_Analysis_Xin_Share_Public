@@ -64,7 +64,7 @@ https://s3-us-west-2.amazonaws.com/human-pangenomics/T2T/CHM13/assemblies/annota
 Please check READNE.txt in the same folder for more details
 ```
 
-# Self-alignment0-based Analysis
+# Self-alignment-based Analysis
 This analysis is based on the fastq files from hg38-based wetlab run. Then, we realign the reads to T2T reference through pipeline.
 
 ## uBAMs
@@ -173,3 +173,49 @@ job:
 
 ### NOTICE
 All jobs have been completed successfully. Both Lift-over-bed-file-based results and Downloaded-bed-file-based results are ready to review.
+
+# Wet lab experiement 20251007_1416_2E_PBE95329-based analysis (T2T reference was used directly)
+## Wet lab Running Results
+### Raw Data 
+```
+/DCEG/CGF/Sequencing/ONT/Prom24/RawData/CGR_Experiments/10072025_AS_chrX_T2T/20251007_1416_2E_PBE95329_69e83be9
+```
+### PostRun_Analysis
+```
+/DCEG/CGF/Sequencing/ONT/Prom24/PostRun_Analysis/20251007_1416_2E_PBE95329_69e83be9
+```
+### Notice
+1. Raw Data 
+   * The BAM file contains 3 types of RG info in header, including barcode01, barcode02, and unclassified (unexpected).
+   * Each "RG info" contains the "al" tag (CGR sample ID (SD386619 or SD407538), and "unclassified")
+   * The RG info from "barcode01" and "barcode02" contain the "SM" tag (barcode01/barcode02), while RG info from "unclassified" does not contains "SM" tag.
+   * I just manually checked multiple BAMs from SD386619 and SD407538. Based on my testing cases
+      * The BAM header indeed contains 3 types of RG info (barcode01, barcode02, and unclassified)
+      * Regarding the reads inside BAM file, SD386619 only contain the reads from barcode01, while SD407538 only contain the reads from barcode02 (expected). 
+
+2. PostRun_Analysis
+   * There is no folder named by using CGR Sample ID (we only have folders with the name "barcode*" and "unclassified")
+   * If we combine the information from "raw data" folder, we can think that "barcode01" should be associated with SD386619, and "barcode02" should be associated with SD407538.
+   * Regarding the BAM file inside the folder barcode01/barcode02
+      * The "SM" tag contains the value of barcode01/barcode02 (e.g, SM:barcode01)
+      * The "al" tag is not the CGR sample ID but the flow cell name "10072025_AS_chrX_T2T" (e.g., al:10072025_AS_chrX_T2T) (unexpected).
+
+## Bioinformatics Analysis Results
+### ToulingQC
+1. Flowcell-level
+```
+/DCEG/CGF/Sequencing/ONT/Prom24/Bioinformatics/Experiment/20251007_1416_2E_PBE95329_69e83be9/wf-toulligqc/v1.3/Flowcell-level/output
+```
+2. Barcode01-based running results (should be associated with SD386619)
+```
+/DCEG/CGF/Sequencing/ONT/Prom24/Bioinformatics/Experiment/20251007_1416_2E_PBE95329_69e83be9/wf-toulligqc/v1.3/barcode01-based/output_barcode01
+```
+3. Barcode02-based running results (should be associated with SD407538)
+```
+/DCEG/CGF/Sequencing/ONT/Prom24/Bioinformatics/Experiment/20251007_1416_2E_PBE95329_69e83be9/wf-toulligqc/v1.3/barcode02-based/output_barcode02
+```
+3. Notice
+   * Some parts of report are identical among Flowcell-level, Barcode01-based and Barcode02-based analysis.
+   * You will see the additional section in Barcode01-based and Barcode02-based analysis report (please check the screenshot below as an example).
+<img width="1246" height="686" alt="image" src="https://github.com/user-attachments/assets/2e88eb62-48a7-4057-acec-fdfffe4569a0" />
+
