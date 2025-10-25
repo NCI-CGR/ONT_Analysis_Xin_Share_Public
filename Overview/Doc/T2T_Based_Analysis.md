@@ -208,11 +208,11 @@ All jobs have been completed successfully. Both Lift-over-bed-file-based results
 ```
 2. barcode01-based running results (should be associated with SD386619)
 ```
-/DCEG/CGF/Sequencing/ONT/Prom24/Bioinformatics/Experiment/20251007_1416_2E_PBE95329_69e83be9/wf-toulligqc/v1.3/barcode01-based/output_barcode01
+/DCEG/CGF/Sequencing/ONT/Prom24/Bioinformatics/Experiment/20251007_1416_2E_PBE95329_69e83be9/wf-toulligqc/v1.3/barcode01-based-SD386619/output_barcode01
 ```
 3. barcode02-based running results (should be associated with SD407538)
 ```
-/DCEG/CGF/Sequencing/ONT/Prom24/Bioinformatics/Experiment/20251007_1416_2E_PBE95329_69e83be9/wf-toulligqc/v1.3/barcode02-based/output_barcode02
+/DCEG/CGF/Sequencing/ONT/Prom24/Bioinformatics/Experiment/20251007_1416_2E_PBE95329_69e83be9/wf-toulligqc/v1.3/barcode02-based-SD407538/output_barcode02
 ```
 3. Notice
    * Some parts of report are identical among Flowcell-level, Barcode01-based and Barcode02-based analysis.
@@ -222,10 +222,10 @@ All jobs have been completed successfully. Both Lift-over-bed-file-based results
 ### wf-human-variant-pipeline
 1. barcode01-based analysis (should be associated with SD386619)
 ```
-/DCEG/CGF/Sequencing/ONT/Prom24/Bioinformatics/Experiment/20251007_1416_2E_PBE95329_69e83be9/wf-human-variant/v2.7.2/barcode01/output.wise.region
+/DCEG/CGF/Sequencing/ONT/Prom24/Bioinformatics/Experiment/20251007_1416_2E_PBE95329_69e83be9/wf-human-variant/v2.7.2/barcode01-based-SD386619/output.wise.region
 ```
 2. barcode02-based analysis (should be associated with SD407538)
 ```
-/DCEG/CGF/Sequencing/ONT/Prom24/Bioinformatics/Experiment/20251007_1416_2E_PBE95329_69e83be9/wf-human-variant/v2.7.2/barcode02/output.wise.region
+/DCEG/CGF/Sequencing/ONT/Prom24/Bioinformatics/Experiment/20251007_1416_2E_PBE95329_69e83be9/wf-human-variant/v2.7.2/barcode02-based-SD407538/output.wise.region
 ```
 
