@@ -48,13 +48,13 @@ If you plan to post or update something that you believe may be private, please 
         ├── README.txt
         ├── wf-human-variant
         │   └── v2.7.2
-        │       ├── barcode01
-        │       └── barcode02
+        │       ├── barcode01-based-SD386619
+        │       └── barcode02-based-SD407538
         └── wf-toulligqc
             └── v1.3
                 ├── Flowcell-level
-                ├── barcode01-based
-                └── barcode02-based
+                ├── barcode01-based-SD386619
+                └── barcode02-based-SD407538
 ```
 ## Notice
 1. Only production-level results will be put in
