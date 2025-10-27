@@ -178,7 +178,9 @@ All jobs have been completed successfully. Both Lift-over-bed-file-based results
 ## Wet lab Running Results
 ### Raw Data 
 ```
-/DCEG/CGF/Sequencing/ONT/Prom24/RawData/CGR_Experiments/10072025_AS_chrX_T2T/20251007_1416_2E_PBE95329_69e83be9
+/DCEG/CGF/Sequencing/ONT/Prom24/RawData/CGR_Experiments/CGR_Experiments/20251007_1416_2E_PBE95329_69e83be9
+
+# expired: /DCEG/CGF/Sequencing/ONT/Prom24/RawData/CGR_Experiments/10072025_AS_chrX_T2T/20251007_1416_2E_PBE95329_69e83be9
 ```
 ### PostRun_Analysis
 ```
