@@ -251,11 +251,11 @@ This type of analysis is based on using the bed file that was constructed below
 ```
 4. Notification
    * Set "--bam_min_coverage 0" to handle the whole genome sequence analysis
-5. Directory
+5. Results Directory
 ```
 /DCEG/CGF/Sequencing/ONT/Prom24/Bioinformatics/Testing/WholeGenomeBed/wf-human-variant/v2.7.2/ChromSizeAndCytoBandX
 ```
-6. Running results
+6. Running Results (Each Sample)
    * 20250701_1804_1C_PBE55027_8e8920e8 (SD386613)
    ```
    /DCEG/CGF/Sequencing/ONT/Prom24/Bioinformatics/Testing/WholeGenomeBed/wf-human-variant/v2.7.2/ChromSizeAndCytoBandX/20250701_1804_1C_PBE55027_8e8920e8/SD386613/output.chrom.size.and.cytoband.X
@@ -271,4 +271,38 @@ This type of analysis is based on using the bed file that was constructed below
    * 20251007_1416_2E_PBE95329_69e83be9 (SD407538)
    ```
    /DCEG/CGF/Sequencing/ONT/Prom24/Bioinformatics/Testing/WholeGenomeBed/wf-human-variant/v2.7.2/ChromSizeAndCytoBandX/20251007_1416_2E_PBE95329_69e83be9/SD407538/output.chrom.size.and.cytoband.X
+   ```
+### Chromosome-size-based Analysis 
+This type of analysis is based on using the bed file that was constructed below
+1. Use chromosome size to create the regions for all chromosomes (1 to chrom22, X, Y and M)
+   * Use the artificial mask to create the fake annotations for each region
+   * Please check the example below
+<img width="422" height="141" alt="image" src="https://github.com/user-attachments/assets/7e175860-ca0b-4e6f-bc53-bf7d5104b961" />
+
+2. Bed File
+```
+/DCEG/Projects/Exome/SequencingData/DAATeam/Xin/ad_hoc/ONT/Data/Dependence/T2T/wise_region_bed_from_downloaded/hs1.chrom.sizes.cyto.chrX.artificial.mask.bed
+```
+3. Notification
+   * Set "--bam_min_coverage 0" to handle the whole genome sequence analysis
+4. Results Directory
+```
+/mnt/nfs/gigantor/ifs/DCEG/CGF/Sequencing/ONT/Prom24/Bioinformatics/Testing/WholeGenomeBed/wf-human-variant/v2.7.2/ChromSize
+```
+5. Running Results (Each Sample)
+   * 20250701_1804_1C_PBE55027_8e8920e8 (SD386613)
+   ```
+   /DCEG/CGF/Sequencing/ONT/Prom24/Bioinformatics/Testing/WholeGenomeBed/wf-human-variant/v2.7.2/ChromSize/20250701_1804_1C_PBE55027_8e8920e8/SD386613/output.chrom.size
+   ```
+   * 20250701_1804_1F_PBE54594_26fb9d5f (SD407538)
+   ```
+   /DCEG/CGF/Sequencing/ONT/Prom24/Bioinformatics/Testing/WholeGenomeBed/wf-human-variant/v2.7.2/ChromSize/20250701_1804_1F_PBE54594_26fb9d5f/SD407538/output.chrom.size
+   ```
+   * 20251007_1416_2E_PBE95329_69e83be9 (SD386619)
+   ```
+   /DCEG/CGF/Sequencing/ONT/Prom24/Bioinformatics/Testing/WholeGenomeBed/wf-human-variant/v2.7.2/ChromSize/20251007_1416_2E_PBE95329_69e83be9/SD386619/output.chrom.size
+   ```
+   * 20251007_1416_2E_PBE95329_69e83be9 (SD407538)
+   ```
+   /DCEG/CGF/Sequencing/ONT/Prom24/Bioinformatics/Testing/WholeGenomeBed/wf-human-variant/v2.7.2/ChromSize/20251007_1416_2E_PBE95329_69e83be9/SD407538/output.chrom.size
    ```
