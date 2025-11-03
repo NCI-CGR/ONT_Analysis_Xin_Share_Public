@@ -233,6 +233,9 @@ All jobs have been completed successfully. Both Lift-over-bed-file-based results
 ```
 
 ## Whole-genome-bed-file-based Analysis
+The major purpose of this run is getting the coverage summarization table
+<img width="2704" height="1324" alt="image" src="https://github.com/user-attachments/assets/a63af763-576b-477b-9d30-4634e5457e28" />
+
 ### Chromosome-size-and-cytoband-chrX-based Analysis 
 This type of analysis is based on using the bed file that was constructed below
 1. Use chromosone size to create the regions for chromosome 1 to chromosome 22 and chromosome M
