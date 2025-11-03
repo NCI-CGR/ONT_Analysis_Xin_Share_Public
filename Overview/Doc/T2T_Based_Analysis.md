@@ -240,7 +240,6 @@ This type of analysis is based on using the bed file that was constructed below
    * Please check the example below
 <img width="422" height="141" alt="image" src="https://github.com/user-attachments/assets/7e175860-ca0b-4e6f-bc53-bf7d5104b961" />
 
-
 2. Use cytoband regions for chromosome X
    * Please check the example below
 <img width="508" height="199" alt="image" src="https://github.com/user-attachments/assets/e1f42473-8051-4005-917b-98037a87cd45" />
@@ -255,7 +254,7 @@ This type of analysis is based on using the bed file that was constructed below
 ```
 /DCEG/CGF/Sequencing/ONT/Prom24/Bioinformatics/Testing/WholeGenomeBed/wf-human-variant/v2.7.2/ChromSizeAndCytoBandX
 ```
-6. Running Results (Each Sample)
+6. **Running Results (Each Sample)**
    * 20250701_1804_1C_PBE55027_8e8920e8 (SD386613)
    ```
    /DCEG/CGF/Sequencing/ONT/Prom24/Bioinformatics/Testing/WholeGenomeBed/wf-human-variant/v2.7.2/ChromSizeAndCytoBandX/20250701_1804_1C_PBE55027_8e8920e8/SD386613/output.chrom.size.and.cytoband.X
@@ -289,7 +288,7 @@ This type of analysis is based on using the bed file that was constructed below
 ```
 /mnt/nfs/gigantor/ifs/DCEG/CGF/Sequencing/ONT/Prom24/Bioinformatics/Testing/WholeGenomeBed/wf-human-variant/v2.7.2/ChromSize
 ```
-5. Running Results (Each Sample)
+5. **Running Results (Each Sample)**
    * 20250701_1804_1C_PBE55027_8e8920e8 (SD386613)
    ```
    /DCEG/CGF/Sequencing/ONT/Prom24/Bioinformatics/Testing/WholeGenomeBed/wf-human-variant/v2.7.2/ChromSize/20250701_1804_1C_PBE55027_8e8920e8/SD386613/output.chrom.size
