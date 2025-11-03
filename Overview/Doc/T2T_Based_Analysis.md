@@ -233,4 +233,38 @@ All jobs have been completed successfully. Both Lift-over-bed-file-based results
 ```
 
 ## Whole-genome-bed-file-based Analysis
+### Chromosome-size-and-cytoband-chrX-based Analysis 
+This type of analysis is based on using the bed file that was constructed below
+1. Use chromosone size to create the regions for chromosome 1 to chromosome 22 and chromosome M
+   * Use the artificial mask to create the fake annotations for each region
+   * Please check the example below
+<img width="422" height="141" alt="image" src="https://github.com/user-attachments/assets/7e175860-ca0b-4e6f-bc53-bf7d5104b961" />
 
+
+2. Use cytoband regions for chromosome X
+   * Please check the example below
+<img width="508" height="199" alt="image" src="https://github.com/user-attachments/assets/e1f42473-8051-4005-917b-98037a87cd45" />
+
+3. Bed File
+```
+/DCEG/Projects/Exome/SequencingData/DAATeam/Xin/ad_hoc/ONT/Data/Dependence/T2T/wise_region_bed_from_downloaded/hs1.chrom.sizes.cyto.chrX.artificial.mask.bed
+```
+4. Notification
+   * Set "--bam_min_coverage 0" to handle the whole genome sequence analysis
+5. Running results
+   * SD386613
+   ```
+   fdfdfdf
+   ```
+   * SD407538
+   ```
+   fdfff
+   ```
+   * 20251007_1416_2E_PBE95329_69e83be9 (SD386619)
+   ```
+   dfdfdfffd
+   ```
+   * 20251007_1416_2E_PBE95329_69e83be9 (SD407538)
+   ```
+   fdfdfdff
+   ```
