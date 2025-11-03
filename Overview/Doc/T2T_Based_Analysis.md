@@ -202,7 +202,8 @@ All jobs have been completed successfully. Both Lift-over-bed-file-based results
       * The "SM" tag contains the value of barcode01/barcode02 (e.g, SM:barcode01)
       * The "al" tag is not the CGR sample ID but the flow cell name "10072025_AS_chrX_T2T" (e.g., al:10072025_AS_chrX_T2T) (unexpected).
 
-## Bioinformatics Analysis Results
+# Bioinformatics Analysis Results 
+## Cytoband-chrX-bed-file-based Analysis
 ### ToulingQC
 1. Flowcell-level
 ```
@@ -230,4 +231,6 @@ All jobs have been completed successfully. Both Lift-over-bed-file-based results
 ```
 /DCEG/CGF/Sequencing/ONT/Prom24/Bioinformatics/Experiment/20251007_1416_2E_PBE95329_69e83be9/wf-human-variant/v2.7.2/barcode02-based-SD407538/output.wise.region
 ```
+
+## Whole-genome-bed-file-based Analysis
 
