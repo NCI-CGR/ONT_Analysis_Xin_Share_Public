@@ -251,20 +251,24 @@ This type of analysis is based on using the bed file that was constructed below
 ```
 4. Notification
    * Set "--bam_min_coverage 0" to handle the whole genome sequence analysis
-5. Running results
-   * SD386613
+5. Directory
+```
+/DCEG/CGF/Sequencing/ONT/Prom24/Bioinformatics/Testing/WholeGenomeBed/wf-human-variant/v2.7.2/ChromSizeAndCytoBandX
+```
+6. Running results
+   * 20250701_1804_1C_PBE55027_8e8920e8 (SD386613)
    ```
-   fdfdfdf
+   /DCEG/CGF/Sequencing/ONT/Prom24/Bioinformatics/Testing/WholeGenomeBed/wf-human-variant/v2.7.2/ChromSizeAndCytoBandX/20250701_1804_1C_PBE55027_8e8920e8/SD386613/output.chrom.size.and.cytoband.X
    ```
-   * SD407538
+   * 20250701_1804_1F_PBE54594_26fb9d5f (SD407538)
    ```
-   fdfff
+   /DCEG/CGF/Sequencing/ONT/Prom24/Bioinformatics/Testing/WholeGenomeBed/wf-human-variant/v2.7.2/ChromSizeAndCytoBandX/20250701_1804_1F_PBE54594_26fb9d5f/SD407538/output.chrom.size.and.cytoband.X
    ```
    * 20251007_1416_2E_PBE95329_69e83be9 (SD386619)
    ```
-   dfdfdfffd
+   /DCEG/CGF/Sequencing/ONT/Prom24/Bioinformatics/Testing/WholeGenomeBed/wf-human-variant/v2.7.2/ChromSizeAndCytoBandX/20251007_1416_2E_PBE95329_69e83be9/SD386619/output.chrom.size.and.cytoband.X
    ```
    * 20251007_1416_2E_PBE95329_69e83be9 (SD407538)
    ```
-   fdfdfdff
+   /DCEG/CGF/Sequencing/ONT/Prom24/Bioinformatics/Testing/WholeGenomeBed/wf-human-variant/v2.7.2/ChromSizeAndCytoBandX/20251007_1416_2E_PBE95329_69e83be9/SD407538/output.chrom.size.and.cytoband.X
    ```
