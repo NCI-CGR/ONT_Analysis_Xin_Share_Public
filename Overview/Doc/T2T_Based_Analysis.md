@@ -247,7 +247,7 @@ This type of analysis is based on using the bed file that was constructed below
 
 3. Bed File
 ```
-/DCEG/Projects/Exome/SequencingData/DAATeam/Xin/ad_hoc/ONT/Data/Dependence/T2T/wise_region_bed_from_downloaded/hs1.chrom.sizes.cyto.chrX.artificial.mask.bed
+/DCEG/CGF/Sequencing/ONT/Prom24/Bioinformatics/Testing/WholeGenomeBed/wf-human-variant/v2.7.2/ChromSizeAndCytoBandX/hs1.chrom.sizes.cyto.chrX.artificial.mask.bed
 ```
 4. Notification
    * Set "--bam_min_coverage 0" to handle the whole genome sequence analysis
@@ -281,7 +281,7 @@ This type of analysis is based on using the bed file that was constructed below
 
 2. Bed File
 ```
-/DCEG/Projects/Exome/SequencingData/DAATeam/Xin/ad_hoc/ONT/Data/Dependence/T2T/wise_region_bed_from_downloaded/hs1.chrom.sizes.cyto.chrX.artificial.mask.bed
+/DCEG/CGF/Sequencing/ONT/Prom24/Bioinformatics/Testing/WholeGenomeBed/wf-human-variant/v2.7.2/ChromSize/hs1.chrom.sizes.artificial.mask.bed
 ```
 3. Notification
    * Set "--bam_min_coverage 0" to handle the whole genome sequence analysis
