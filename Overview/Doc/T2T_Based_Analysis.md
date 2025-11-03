@@ -239,7 +239,7 @@ The major purpose of this run is getting the coverage summarization table
 ### Chromosome-size-and-cytoband-chrX-based Analysis 
 This type of analysis is based on using the bed file that was constructed below
 1. Use chromosone size to create the regions for chromosome 1 to chromosome 22 and chromosome M
-   * Use the artificial mask to create the fake annotations for each region
+   * Use the artificial mask to create the fake annotations for each region (column 4 and 5)
    * Please check the example below
 <img width="422" height="141" alt="image" src="https://github.com/user-attachments/assets/7e175860-ca0b-4e6f-bc53-bf7d5104b961" />
 
@@ -277,7 +277,7 @@ This type of analysis is based on using the bed file that was constructed below
 ### Chromosome-size-based Analysis 
 This type of analysis is based on using the bed file that was constructed below
 1. Use chromosome size to create the regions for all chromosomes (1 to chrom22, X, Y and M)
-   * Use the artificial mask to create the fake annotations for each region
+   * Use the artificial mask to create the fake annotations for each region (column 4 and 5)
    * Please check the example below
 <img width="422" height="141" alt="image" src="https://github.com/user-attachments/assets/7e175860-ca0b-4e6f-bc53-bf7d5104b961" />
 
