@@ -154,3 +154,44 @@ Min depth: 0
 3. Stacked Plots
 <img width="3600" height="1500" alt="SD407538_chrX_centromere_coverage_comparison" src="https://github.com/user-attachments/assets/720682f6-1913-4754-bb29-123af2affbfd" />
 
+
+## Metrcis Evaluation
+### Introduction
+We use metrcis to evaluate the situation in centeromere regions. 
+
+There are 2 experiment be used for testing, inccluding
+1. 20250701_1804_1C_PBE55027_8e8920e8
+   * SD386613
+2. 20250701_1804_1F_PBE54594_26fb9d5f
+   * SD407538
+  
+For each experiment, we have 3 types of running results, including
+1. hg38-based dataset (from sequencer directly)
+2. T2T-based dataset (based on self-alignment)
+3. T2T-based dataset (from sequencer directly)
+
+Regarding the metrics we used for evaluation, please check the list below
+```
+1 Experiment
+2 Sample
+3 Self-Aligned (Pipeline)
+4 Reference
+5 Mean coverage
+6 20th percentile coverage
+7 Fold 80 base penalty
+8 total_reads (mapped)
+9 mean_mapq
+10 median_mapq
+11 pct_mapq_ge_30
+12 pct_mapq0
+13 pct_secondary
+14 pct_supplementary
+15 pct_softclip
+```
+
+### Results
+1. Screenshot
+<img width="1454" height="221" alt="Screenshot 2025-11-04 at 12 26 12 PM" src="https://github.com/user-attachments/assets/32e987b2-e723-407d-9f75-690235c73df5" />
+
+2. File
+[Centromere_Evaluation_Metrics.xlsx](https://github.com/user-attachments/files/23342667/Centromere_Evaluation_Metrics.xlsx)
