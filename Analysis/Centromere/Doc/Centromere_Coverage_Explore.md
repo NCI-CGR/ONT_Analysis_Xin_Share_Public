@@ -155,9 +155,9 @@ Min depth: 0
 <img width="3600" height="1500" alt="SD407538_chrX_centromere_coverage_comparison" src="https://github.com/user-attachments/assets/720682f6-1913-4754-bb29-123af2affbfd" />
 
 
-## Metrcis Evaluation
+## Metrics Evaluation
 ### Introduction
-We use metrcis to evaluate the situation in centeromere regions. 
+We use metrics to evaluate the situation in centeromere regions. 
 
 There are 2 experiments be used for testing, inccluding
 1. 20250701_1804_1C_PBE55027_8e8920e8
