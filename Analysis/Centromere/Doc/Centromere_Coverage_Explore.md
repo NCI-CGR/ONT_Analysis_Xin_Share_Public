@@ -159,7 +159,7 @@ Min depth: 0
 ### Introduction
 We use metrcis to evaluate the situation in centeromere regions. 
 
-There are 2 experiment be used for testing, inccluding
+There are 2 experiments be used for testing, inccluding
 1. 20250701_1804_1C_PBE55027_8e8920e8
    * SD386613
 2. 20250701_1804_1F_PBE54594_26fb9d5f
