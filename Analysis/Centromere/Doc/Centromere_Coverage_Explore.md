@@ -245,3 +245,22 @@ Regarding the metrics we used for evaluation, please check the list below
 
 2. T2T
 <img width="3600" height="1200" alt="image" src="https://github.com/user-attachments/assets/b6cc8459-1d68-44fd-bce6-47d05da72873" />
+
+
+## MapQ Plot (base by base, smooth per 500 bps, fixed maximum y axis)
+### Sample: SD386613
+1. hg38
+<img width="3600" height="1200" alt="image" src="https://github.com/user-attachments/assets/b2a67ae9-c0fa-434a-b991-f13aae2b1d48" />
+
+
+2. T2T
+<img width="3600" height="1200" alt="image" src="https://github.com/user-attachments/assets/c44c847e-f29b-4cf2-80fd-3ec5a65d506c" />
+
+
+### Sample: SD407538
+1. hg38
+<img width="3600" height="1200" alt="image" src="https://github.com/user-attachments/assets/8c73cce4-a987-45e1-8649-4204fa86aae7" />
+
+
+2. T2T
+<img width="3600" height="1200" alt="image" src="https://github.com/user-attachments/assets/55b6e587-4538-4f1d-ab9d-61ee651e73a2" />
