@@ -195,3 +195,21 @@ Regarding the metrics we used for evaluation, please check the list below
 
 2. File
 [Centromere_Evaluation_Metrics.xlsx](https://github.com/user-attachments/files/23342667/Centromere_Evaluation_Metrics.xlsx)
+
+## Coverage depth Plot (log)
+### Sample: SD386613
+1. hg38
+<img width="3600" height="1200" alt="image" src="https://github.com/user-attachments/assets/10bcdf30-1965-477f-8264-179df8131380" />
+
+2. T2T
+<img width="3600" height="1200" alt="image" src="https://github.com/user-attachments/assets/f41ff18d-7e83-421a-adff-a8e8d0d1e9fb" />
+
+### Sample: SD407538
+1. hg38
+<img width="3600" height="1200" alt="image" src="https://github.com/user-attachments/assets/a3d8bca1-a31a-4574-af65-d67823866e05" />
+
+
+2. T2T
+<img width="3600" height="1200" alt="image" src="https://github.com/user-attachments/assets/dde63ed5-7ac9-466c-990a-466f4d562d1b" />
+
+
