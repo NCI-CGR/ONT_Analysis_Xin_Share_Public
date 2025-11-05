@@ -196,7 +196,7 @@ Regarding the metrics we used for evaluation, please check the list below
 2. File
 [Centromere_Evaluation_Metrics.xlsx](https://github.com/user-attachments/files/23342667/Centromere_Evaluation_Metrics.xlsx)
 
-## Coverage depth Plot (log)
+## Coverage Depth Plot (log)
 ### Sample: SD386613
 1. hg38
 <img width="3600" height="1200" alt="image" src="https://github.com/user-attachments/assets/10bcdf30-1965-477f-8264-179df8131380" />
@@ -212,4 +212,18 @@ Regarding the metrics we used for evaluation, please check the list below
 2. T2T
 <img width="3600" height="1200" alt="image" src="https://github.com/user-attachments/assets/dde63ed5-7ac9-466c-990a-466f4d562d1b" />
 
+## MapQ Plot
+### Sample: SD386613
+1. hg38
+<img width="3000" height="1500" alt="image" src="https://github.com/user-attachments/assets/ff6e0fea-8cfa-4263-b9ad-dd503ede930e" />
 
+2. T2T
+<img width="3000" height="1500" alt="image" src="https://github.com/user-attachments/assets/2e8cb271-f092-4636-bd5c-afd262517177" />
+
+
+### Sample: SD407538
+1. hg38
+<img width="3000" height="1500" alt="image" src="https://github.com/user-attachments/assets/fb21d98c-4833-4ef0-a149-e90de116ca0a" />
+
+2. T2T
+<img width="3000" height="1500" alt="image" src="https://github.com/user-attachments/assets/cd8daa2b-4d44-46c3-a436-180ba36bbe02" />
