@@ -212,7 +212,7 @@ Regarding the metrics we used for evaluation, please check the list below
 2. T2T
 <img width="3600" height="1200" alt="image" src="https://github.com/user-attachments/assets/dde63ed5-7ac9-466c-990a-466f4d562d1b" />
 
-## MapQ Plot
+## MapQ Plot (Score Distribution)
 ### Sample: SD386613
 1. hg38
 <img width="3000" height="1500" alt="image" src="https://github.com/user-attachments/assets/ff6e0fea-8cfa-4263-b9ad-dd503ede930e" />
@@ -227,3 +227,21 @@ Regarding the metrics we used for evaluation, please check the list below
 
 2. T2T
 <img width="3000" height="1500" alt="image" src="https://github.com/user-attachments/assets/cd8daa2b-4d44-46c3-a436-180ba36bbe02" />
+
+## MapQ Plot (base by base, smooth per 500 bps)
+### Sample: SD386613
+1. hg38
+<img width="3600" height="1200" alt="image" src="https://github.com/user-attachments/assets/8764b208-8d9d-4c17-99e2-9ff51a64570b" />
+
+
+2. T2T
+<img width="3600" height="1200" alt="image" src="https://github.com/user-attachments/assets/61513c84-0f19-4858-8d09-f3043f3df002" />
+
+
+### Sample: SD407538
+1. hg38
+<img width="3600" height="1200" alt="image" src="https://github.com/user-attachments/assets/612a680a-03f7-4c1a-b8c3-67b1f40c15eb" />
+
+
+2. T2T
+<img width="3600" height="1200" alt="image" src="https://github.com/user-attachments/assets/b6cc8459-1d68-44fd-bce6-47d05da72873" />
