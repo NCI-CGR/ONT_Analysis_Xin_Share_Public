@@ -45,7 +45,7 @@ cat ./hg38.cen-mask.bed | grep -i 'chrX' > hg38.cen-mask.chrX.only.bed
 ```
 
 ## Results (Samtools-Depth-Based Plot)
-### SD386613
+### SD386613 (20250701_1804_1C_PBE55027_8e8920e8)
 1. SD386613-hg38-Centeromere
 <img width="3600" height="1200" alt="image" src="https://github.com/user-attachments/assets/901ed42d-bcd9-4977-b431-a9422c9d3291" />
 
@@ -98,7 +98,7 @@ Min depth: 0
 <img width="3600" height="1500" alt="image" src="https://github.com/user-attachments/assets/1cfceb1c-5ac8-45d6-a518-1120b8888611" />
 
 
-### SD407538
+### SD407538 (20250701_1804_1F_PBE54594_26fb9d5f)
 1. SD407538-hg38-Centeromere
    * SD407538_chrX_hg38_samtools_depth_plot.png
 
@@ -159,10 +159,13 @@ Min depth: 0
 ### Introduction
 We use metrics to evaluate the situation in centeromere regions. 
 
-There are 2 experiments be used for testing, inccluding
+There are 3 experiments be used for testing, inccluding
 1. 20250701_1804_1C_PBE55027_8e8920e8
    * SD386613
 2. 20250701_1804_1F_PBE54594_26fb9d5f
+   * SD407538
+3. 20251007_1416_2E_PBE95329_69e83be9
+   * SD386619
    * SD407538
   
 For each experiment, we have 3 types of running results, including
@@ -198,14 +201,14 @@ Regarding the metrics we used for evaluation, please check the list below
 
 # Plots Evaluation
 ## Coverage Depth Plot (log)
-### Sample: SD386613
+### Sample: SD386613 (20250701_1804_1C_PBE55027_8e8920e8)
 1. hg38 (log)
 <img width="3600" height="1200" alt="image" src="https://github.com/user-attachments/assets/10bcdf30-1965-477f-8264-179df8131380" />
 
 2. T2T (log)
 <img width="3600" height="1200" alt="image" src="https://github.com/user-attachments/assets/f41ff18d-7e83-421a-adff-a8e8d0d1e9fb" />
 
-### Sample: SD407538
+### Sample: SD407538 (20250701_1804_1F_PBE54594_26fb9d5f)
 1. hg38 (log)
 <img width="3600" height="1200" alt="image" src="https://github.com/user-attachments/assets/a3d8bca1-a31a-4574-af65-d67823866e05" />
 
@@ -229,7 +232,7 @@ Regarding the metrics we used for evaluation, please check the list below
 
 
 ## MapQ Plot (Score Distribution)
-### Sample: SD386613
+### Sample: SD386613 (20250701_1804_1C_PBE55027_8e8920e8)
 1. hg38
 <img width="3000" height="1500" alt="image" src="https://github.com/user-attachments/assets/ff6e0fea-8cfa-4263-b9ad-dd503ede930e" />
 
@@ -237,7 +240,7 @@ Regarding the metrics we used for evaluation, please check the list below
 <img width="3000" height="1500" alt="image" src="https://github.com/user-attachments/assets/2e8cb271-f092-4636-bd5c-afd262517177" />
 
 
-### Sample: SD407538
+### Sample: SD407538 (20250701_1804_1F_PBE54594_26fb9d5f)
 1. hg38
 <img width="3000" height="1500" alt="image" src="https://github.com/user-attachments/assets/fb21d98c-4833-4ef0-a149-e90de116ca0a" />
 
@@ -255,7 +258,7 @@ Regarding the metrics we used for evaluation, please check the list below
 
 
 ## MapQ Plot (base by base, smooth per 500 bps)
-### Sample: SD386613
+### Sample: SD386613 (20250701_1804_1C_PBE55027_8e8920e8)
 1. hg38
 <img width="3600" height="1200" alt="image" src="https://github.com/user-attachments/assets/8764b208-8d9d-4c17-99e2-9ff51a64570b" />
 
@@ -264,7 +267,7 @@ Regarding the metrics we used for evaluation, please check the list below
 <img width="3600" height="1200" alt="image" src="https://github.com/user-attachments/assets/61513c84-0f19-4858-8d09-f3043f3df002" />
 
 
-### Sample: SD407538
+### Sample: SD407538 (20250701_1804_1F_PBE54594_26fb9d5f)
 1. hg38
 <img width="3600" height="1200" alt="image" src="https://github.com/user-attachments/assets/612a680a-03f7-4c1a-b8c3-67b1f40c15eb" />
 
@@ -283,7 +286,7 @@ Regarding the metrics we used for evaluation, please check the list below
 
 
 ## MapQ Plot (base by base, smooth per 500 bps, fixed maximum y axis)
-### Sample: SD386613 (Max 40)
+### Sample: SD386613 (Max 40) (20250701_1804_1C_PBE55027_8e8920e8)
 1. hg38
 <img width="3600" height="1200" alt="image" src="https://github.com/user-attachments/assets/b2a67ae9-c0fa-434a-b991-f13aae2b1d48" />
 
@@ -292,7 +295,7 @@ Regarding the metrics we used for evaluation, please check the list below
 <img width="3600" height="1200" alt="image" src="https://github.com/user-attachments/assets/c44c847e-f29b-4cf2-80fd-3ec5a65d506c" />
 
 
-### Sample: SD407538 (Max 16)
+### Sample: SD407538 (Max 16) (20250701_1804_1F_PBE54594_26fb9d5f)
 1. hg38
 <img width="3600" height="1200" alt="image" src="https://github.com/user-attachments/assets/8c73cce4-a987-45e1-8649-4204fa86aae7" />
 
