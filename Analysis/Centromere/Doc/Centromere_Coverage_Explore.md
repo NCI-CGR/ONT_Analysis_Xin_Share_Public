@@ -205,14 +205,14 @@ Regarding the metrics we used for evaluation, please check the list below
 1. hg38 (log)
 <img width="3600" height="1200" alt="image" src="https://github.com/user-attachments/assets/10bcdf30-1965-477f-8264-179df8131380" />
 
-2. T2T (log)
+2. T2T (log, self-align)
 <img width="3600" height="1200" alt="image" src="https://github.com/user-attachments/assets/f41ff18d-7e83-421a-adff-a8e8d0d1e9fb" />
 
 ### Sample: SD407538 (20250701_1804_1F_PBE54594_26fb9d5f)
 1. hg38 (log)
 <img width="3600" height="1200" alt="image" src="https://github.com/user-attachments/assets/a3d8bca1-a31a-4574-af65-d67823866e05" />
 
-2. T2T
+2. T2T (log, self-align)
 <img width="3600" height="1200" alt="image" src="https://github.com/user-attachments/assets/dde63ed5-7ac9-466c-990a-466f4d562d1b" />
 
 
@@ -236,7 +236,7 @@ Regarding the metrics we used for evaluation, please check the list below
 1. hg38
 <img width="3000" height="1500" alt="image" src="https://github.com/user-attachments/assets/ff6e0fea-8cfa-4263-b9ad-dd503ede930e" />
 
-2. T2T
+2. T2T (self-align)
 <img width="3000" height="1500" alt="image" src="https://github.com/user-attachments/assets/2e8cb271-f092-4636-bd5c-afd262517177" />
 
 
@@ -244,7 +244,7 @@ Regarding the metrics we used for evaluation, please check the list below
 1. hg38
 <img width="3000" height="1500" alt="image" src="https://github.com/user-attachments/assets/fb21d98c-4833-4ef0-a149-e90de116ca0a" />
 
-2. T2T
+2. T2T (self-align)
 <img width="3000" height="1500" alt="image" src="https://github.com/user-attachments/assets/cd8daa2b-4d44-46c3-a436-180ba36bbe02" />
 
 ### Sample: SD386619 (20251007_1416_2E_PBE95329_69e83be9)
@@ -263,7 +263,7 @@ Regarding the metrics we used for evaluation, please check the list below
 <img width="3600" height="1200" alt="image" src="https://github.com/user-attachments/assets/8764b208-8d9d-4c17-99e2-9ff51a64570b" />
 
 
-2. T2T
+2. T2T (self-align)
 <img width="3600" height="1200" alt="image" src="https://github.com/user-attachments/assets/61513c84-0f19-4858-8d09-f3043f3df002" />
 
 
@@ -272,7 +272,7 @@ Regarding the metrics we used for evaluation, please check the list below
 <img width="3600" height="1200" alt="image" src="https://github.com/user-attachments/assets/612a680a-03f7-4c1a-b8c3-67b1f40c15eb" />
 
 
-2. T2T
+2. T2T (self-align)
 <img width="3600" height="1200" alt="image" src="https://github.com/user-attachments/assets/b6cc8459-1d68-44fd-bce6-47d05da72873" />
 
 ### Sample: SD386619 (20251007_1416_2E_PBE95329_69e83be9)
@@ -291,7 +291,7 @@ Regarding the metrics we used for evaluation, please check the list below
 <img width="3600" height="1200" alt="image" src="https://github.com/user-attachments/assets/b2a67ae9-c0fa-434a-b991-f13aae2b1d48" />
 
 
-2. T2T
+2. T2T (self-align)
 <img width="3600" height="1200" alt="image" src="https://github.com/user-attachments/assets/c44c847e-f29b-4cf2-80fd-3ec5a65d506c" />
 
 
@@ -300,5 +300,5 @@ Regarding the metrics we used for evaluation, please check the list below
 <img width="3600" height="1200" alt="image" src="https://github.com/user-attachments/assets/8c73cce4-a987-45e1-8649-4204fa86aae7" />
 
 
-2. T2T
+2. T2T (self-align)
 <img width="3600" height="1200" alt="image" src="https://github.com/user-attachments/assets/55b6e587-4538-4f1d-ab9d-61ee651e73a2" />
