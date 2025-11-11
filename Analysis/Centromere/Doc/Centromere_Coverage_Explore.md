@@ -198,19 +198,34 @@ Regarding the metrics we used for evaluation, please check the list below
 
 ## Coverage Depth Plot (log)
 ### Sample: SD386613
-1. hg38
+1. hg38 (log)
 <img width="3600" height="1200" alt="image" src="https://github.com/user-attachments/assets/10bcdf30-1965-477f-8264-179df8131380" />
 
-2. T2T
+2. T2T (log)
 <img width="3600" height="1200" alt="image" src="https://github.com/user-attachments/assets/f41ff18d-7e83-421a-adff-a8e8d0d1e9fb" />
 
 ### Sample: SD407538
-1. hg38
+1. hg38 (log)
 <img width="3600" height="1200" alt="image" src="https://github.com/user-attachments/assets/a3d8bca1-a31a-4574-af65-d67823866e05" />
-
 
 2. T2T
 <img width="3600" height="1200" alt="image" src="https://github.com/user-attachments/assets/dde63ed5-7ac9-466c-990a-466f4d562d1b" />
+
+
+### Sample: SD386619 (20251007_1416_2E_PBE95329_69e83be9)
+1. T2T (original)
+<img width="3600" height="1200" alt="image" src="https://github.com/user-attachments/assets/d104eaa9-85f4-4f37-ab88-a97c9fe6fcb4" />
+
+2. T2T (log)
+<img width="3600" height="1200" alt="image" src="https://github.com/user-attachments/assets/2f072826-3ada-4068-b779-bcfddc4339c5" />
+
+### Sample: SD407538 (20251007_1416_2E_PBE95329_69e83be9)
+1. T2T (original)
+<img width="3600" height="1200" alt="image" src="https://github.com/user-attachments/assets/a16a9ff3-03e2-4b30-bdd0-0f8a66dcb72a" />
+
+2. T2T (log)
+<img width="3600" height="1200" alt="image" src="https://github.com/user-attachments/assets/c4fd0256-ff66-434a-b244-d4ca6d80f86f" />
+
 
 ## MapQ Plot (Score Distribution)
 ### Sample: SD386613
