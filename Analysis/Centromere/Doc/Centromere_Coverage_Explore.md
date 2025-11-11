@@ -243,6 +243,16 @@ Regarding the metrics we used for evaluation, please check the list below
 2. T2T
 <img width="3000" height="1500" alt="image" src="https://github.com/user-attachments/assets/cd8daa2b-4d44-46c3-a436-180ba36bbe02" />
 
+### Sample: SD386619 (20251007_1416_2E_PBE95329_69e83be9)
+1. T2T
+<img width="3000" height="1500" alt="image" src="https://github.com/user-attachments/assets/e8923db7-9ca4-4a8e-9c8b-3d8191a8be24" />
+
+
+### Sample: SD407538 (20251007_1416_2E_PBE95329_69e83be9)
+1. T2T
+<img width="3000" height="1500" alt="image" src="https://github.com/user-attachments/assets/142d76b8-7c90-4b5c-9a84-830fc962196a" />
+
+
 ## MapQ Plot (base by base, smooth per 500 bps)
 ### Sample: SD386613
 1. hg38
@@ -260,6 +270,15 @@ Regarding the metrics we used for evaluation, please check the list below
 
 2. T2T
 <img width="3600" height="1200" alt="image" src="https://github.com/user-attachments/assets/b6cc8459-1d68-44fd-bce6-47d05da72873" />
+
+### Sample: SD386619 (20251007_1416_2E_PBE95329_69e83be9)
+1. T2T
+<img width="3600" height="1200" alt="image" src="https://github.com/user-attachments/assets/8e79d42f-e987-4688-9db0-64f2b6368260" />
+
+
+### Sample: SD407538 (20251007_1416_2E_PBE95329_69e83be9)
+1. T2T
+<img width="3600" height="1200" alt="image" src="https://github.com/user-attachments/assets/ae699fb9-9490-4949-bb6d-95ee6b8b94a1" />
 
 
 ## MapQ Plot (base by base, smooth per 500 bps, fixed maximum y axis)
