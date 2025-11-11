@@ -191,10 +191,11 @@ Regarding the metrics we used for evaluation, please check the list below
 
 ### Results
 1. Screenshot
-<img width="1454" height="221" alt="Screenshot 2025-11-04 at 12 26 12 PM" src="https://github.com/user-attachments/assets/32e987b2-e723-407d-9f75-690235c73df5" />
+<img width="1471" height="392" alt="image" src="https://github.com/user-attachments/assets/a37ba125-9ea4-485b-8df3-833234bf96a8" />
 
 2. File
-[Centromere_Evaluation_Metrics.xlsx](https://github.com/user-attachments/files/23342667/Centromere_Evaluation_Metrics.xlsx)
+[Centromere_Evaluation_Metrics.xlsx](https://github.com/user-attachments/files/23468877/Centromere_Evaluation_Metrics.xlsx)
+
 
 ## Coverage Depth Plot (log)
 ### Sample: SD386613
