@@ -324,13 +324,13 @@ This type of analysis is based on using the bed file that was constructed below
 ```
 /DCEG/CGF/Sequencing/ONT/Prom24/Bioinformatics/Testing/WholeGenomeBed/wf-human-variant/v2.7.2/ChromSizeFullAndCytoBandX/hs1.chrom.sizes.full.cyto.chrX.artificial.mask.bed
 ```
-3. Notification
+4. Notification
    * Set "--bam_min_coverage 0" to handle the whole genome sequence analysis
-4. Results Directory
+5. Results Directory
 ```
 /DCEG/CGF/Sequencing/ONT/Prom24/Bioinformatics/Testing/WholeGenomeBed/wf-human-variant/v2.7.2/ChromSizeFullAndCytoBandX
 ```
-5. **Running Results (Each Sample)**
+6. **Running Results (Each Sample)**
    * 20250701_1804_1C_PBE55027_8e8920e8 (SD386613)
    ```
    /DCEG/CGF/Sequencing/ONT/Prom24/Bioinformatics/Testing/WholeGenomeBed/wf-human-variant/v2.7.2/ChromSizeFullAndCytoBandX/20250701_1804_1C_PBE55027_8e8920e8/SD386613/output.wise.region.whole.genome.full.cytoband.X
@@ -347,5 +347,5 @@ This type of analysis is based on using the bed file that was constructed below
    ```
    /DCEG/CGF/Sequencing/ONT/Prom24/Bioinformatics/Testing/WholeGenomeBed/wf-human-variant/v2.7.2/ChromSizeFullAndCytoBandX/20251007_1416_2E_PBE95329_69e83be9/SD407538/output.region.whole.size.full.cytoband.X
    ```
-6. **Notice**
+7. **Notice**
    * The related table could be found in file "{SampleName}.bed_summary.tsv"
