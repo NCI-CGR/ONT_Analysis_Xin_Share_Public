@@ -5,7 +5,7 @@
 /DCEG/CGF/Sequencing/ONT/Prom24/Resources/Bed_Files
 ```
 2. Folder structure
-<img width="691" height="561" alt="image" src="https://github.com/user-attachments/assets/6e39882c-1729-4f25-bdef-974fdce87a79" />
+<img width="675" height="712" alt="image" src="https://github.com/user-attachments/assets/43bef0f2-8009-476c-a8bb-3c860dc83b46" />
 
 
 ## hg38
@@ -36,6 +36,10 @@
    ```
    /DCEG/CGF/Sequencing/ONT/Prom24/Resources/Bed_Files/hg38/hg38.chrom.full.sizes.cytoband.chrX.artificial.mask.bed
    ```
+   * Full size chromosome (from chr1 to chr22, chrY and chrM, **NOTICE: NO CHRX**) + cytoband chrX (used for wd-human-variant pipeline)
+   ```
+   /DCEG/CGF/Sequencing/ONT/Prom24/Resources/Bed_Files/hg38/hg38.chrom.sizes.cytoband.chrX.artificial.mask.bed
+   ```
    * Centromere regions for chrX
    ```
    /DCEG/CGF/Sequencing/ONT/Prom24/Resources/Bed_Files/hg38/centromere/hg38.cen-mask.chrX.only.bed
@@ -64,6 +68,10 @@
    * Full size chromosome (from chr1 to chr22, chrX, chrY and chrM) + cytoband chrX (used for wd-human-variant pipeline)
    ```
    /DCEG/CGF/Sequencing/ONT/Prom24/Resources/Bed_Files/T2T/T2T.hs1.chrom.full.sizes.cytoband.chrX.artificial.mask.bed
+   ```
+   * Full size chromosome (from chr1 to chr22, chrY and chrM, **NOTICE: NO CHRX**) + cytoband chrX (used for wd-human-variant pipeline)
+   ```
+   /DCEG/CGF/Sequencing/ONT/Prom24/Resources/Bed_Files/T2T/T2T.hs1.chrom.sizes.cytoband.chrX.artificial.mask.bed
    ```
    * Centromere regions for chrX
    ```
