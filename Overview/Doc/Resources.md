@@ -5,7 +5,7 @@
 /DCEG/CGF/Sequencing/ONT/Prom24/Resources/Bed_Files
 ```
 2. Folder structure
-<img width="675" height="712" alt="image" src="https://github.com/user-attachments/assets/43bef0f2-8009-476c-a8bb-3c860dc83b46" />
+<img width="646" height="661" alt="Screenshot 2025-11-21 at 4 01 34 PM" src="https://github.com/user-attachments/assets/e58ff082-e510-452e-935a-de115204a1cb" />
 
 
 ## hg38
@@ -59,7 +59,7 @@
 4. Important bed files
    * Cytoband for all main chromosoms
    ```
-   /DCEG/CGF/Sequencing/ONT/Prom24/Resources/Bed_Files/T2T/chm13v2.0_cytobands_allchrs.bed
+   /DCEG/CGF/Sequencing/ONT/Prom24/Resources/Bed_Files/T2T/T2T.chm13v2.0_cytobands_allchrs.bed
    ``` 
    * Cytoband for chrX only
    ```
@@ -75,6 +75,6 @@
    ```
    * Centromere regions for chrX
    ```
-   /DCEG/CGF/Sequencing/ONT/Prom24/Resources/Bed_Files/T2T/centromere/chm13v2.cen-mask.chrX.only.bed
+   /DCEG/CGF/Sequencing/ONT/Prom24/Resources/Bed_Files/T2T/centromere/T2T.chm13v2.cen-mask.chrX.only.bed
    ```
    
