@@ -178,7 +178,7 @@ lix33@nci-cgr:~/DAATeam_Xin/ad_hoc/ONT/Run/dorado/v1.2.0/20251007_1416_2E_PBE953
 
 2. Performance (Example)
 ```
-Step1: Run Dorado Basecaller --->
+Step1: Run Dorado Basecaller
 Running Time: 9hrs 6min 19sec
 
 Step2: Create a sequencing summary file for QC
