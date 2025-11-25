@@ -143,3 +143,47 @@ $dorado demux \
 duration=$SECONDS
 echo "Running Time: $(($duration / 3600))hrs $((($duration / 60) % 60))min $(($duration % 60))sec"
 ```
+
+## Running Results 
+1. Results (Example)
+```
+lix33@nci-cgr:~/DAATeam_Xin/ad_hoc/ONT/Run/dorado/v1.2.0/20251007_1416_2E_PBE95329_69e83be9$ tree ./OUTPUT_BASECALLED_Customized/
+./OUTPUT_BASECALLED_Customized/
+└── 20251007_1416_2E_PBE95329_69e83be9
+    ├── 10072025_AS_chrX_Test2_NBD114-96
+    │   └── 10072025_AS_chrX_T2T
+    │       └── 20251007_1816_2E_PBE95329_69e83be9
+    │           ├── bam_fail
+    │           │   ├── PBE95329_fail_69e83be9_82cba154_0.bam
+    │           │   └── PBE95329_fail_69e83be9_82cba154_0.bam.bai
+    │           └── bam_pass
+    │               ├── PBE95329_pass_69e83be9_82cba154_0.bam
+    │               └── PBE95329_pass_69e83be9_82cba154_0.bam.bai
+    ├── 20251007_1416_2E_PBE95329_69e83be9_summary.tsv
+    └── demux
+        ├── 10072025_AS_chrX_T2T
+        │   └── 20251007_1816_0_PBE95329_69e83be9
+        │       └── bam_pass
+        │           ├── SD386619
+        │           │   ├── PBE95329_pass_SD386619_69e83be9_00000000_0.bam
+        │           │   ├── PBE95329_pass_SD386619_69e83be9_00000000_0.bam.bai
+        │           ├── SD407538
+        │           │   ├── PBE95329_pass_SD407538_69e83be9_00000000_0.bam
+        │           │   ├── PBE95329_pass_SD407538_69e83be9_00000000_0.bam.bai
+        │           └── unclassified
+        │               ├── PBE95329_pass_unclassified_69e83be9_00000000_0.bam
+        │               └── PBE95329_pass_unclassified_69e83be9_00000000_0.bam.bai
+        └── barcoding_summary.txt
+```
+
+2. Performance (Example)
+```
+Step1: Run Dorado Basecaller --->
+Running Time: 9hrs 6min 19sec
+
+Step2: Create a sequencing summary file for QC
+Running Time: 0hrs 24min 4sec
+
+Step3: dorado demultiplex
+Running Time: 2hrs 48min 42sec
+```
