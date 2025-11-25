@@ -53,19 +53,19 @@ bash ./run.dorado.sh
 ```
 
 ## Dorado running script
-1. Your input directory should contains 3 types of directory including
+1. Your input directory should contain 3 types of directory including
    * pod5_pass
    * pod5_fail
    * pod5_skip
 2. Tips
    * In order to save the running time, you can create the softlink for the specific barcode-related pod5_pass and pod5_fail directories.
-   * pod5_skip contains all barcode (not demultiplexed), therefore, we all the pod 5 files in this folder should be considered.
+   * pod5_skip contains all barcode (not demultiplexed), therefore, all pod 5 files in this folder should be considered.
 3. Two key steps, including
    * Basecaller: convert pods 5 to aligned BAM
       * This BAM contains all barcodes
    * demux: demultiplex the BAM based on Barcode defined in samplesheet
-      * The barcodes defined in samplehsheet will come with the seperate demultioplex results.
-      * All barcodes not defined in samplesheet will be put into a separate folder and be viewed as unclassified.
+      * The barcodes defined in samplehsheet will come with the separate demultiplexed results.
+      * All barcodes not defined in samplesheet will be put into a separate folder and treated as unclassified.
 4. Please strictly follow the example below to set the parametes in the command line. Otherwise
    * You may get the BAM unaligned
    * You may get the BAM without barcode info
@@ -145,7 +145,7 @@ echo "Running Time: $(($duration / 3600))hrs $((($duration / 60) % 60))min $(($d
 ```
 
 ## Running Results 
-1. Results (Example)
+1. Results structure (Example)
 ```
 lix33@nci-cgr:~/DAATeam_Xin/ad_hoc/ONT/Run/dorado/v1.2.0/20251007_1416_2E_PBE95329_69e83be9$ tree ./OUTPUT_BASECALLED_Customized/
 ./OUTPUT_BASECALLED_Customized/
