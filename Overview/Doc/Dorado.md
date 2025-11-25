@@ -145,7 +145,7 @@ echo "Running Time: $(($duration / 3600))hrs $((($duration / 60) % 60))min $(($d
 ```
 
 ## Running Results 
-1. Demultiplexed results
+1. Demultiplexed results (Example)
 ```
 /DCEG/Projects/Exome/SequencingData/DAATeam/Xin/ad_hoc/ONT/Run/dorado/v1.2.0/20251007_1416_2E_PBE95329_69e83be9/OUTPUT_BASECALLED_Customized/20251007_1416_2E_PBE95329_69e83be9/demux/10072025_AS_chrX_T2T/20251007_1816_0_PBE95329_69e83be9/bam_pass
 ```
