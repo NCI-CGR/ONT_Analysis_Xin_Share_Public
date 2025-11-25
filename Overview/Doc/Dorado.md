@@ -145,7 +145,11 @@ echo "Running Time: $(($duration / 3600))hrs $((($duration / 60) % 60))min $(($d
 ```
 
 ## Running Results 
-1. Results structure (Example)
+1. Demultiplexed results
+```
+/DCEG/Projects/Exome/SequencingData/DAATeam/Xin/ad_hoc/ONT/Run/dorado/v1.2.0/20251007_1416_2E_PBE95329_69e83be9/OUTPUT_BASECALLED_Customized/20251007_1416_2E_PBE95329_69e83be9/demux/10072025_AS_chrX_T2T/20251007_1816_0_PBE95329_69e83be9/bam_pass
+```
+2. Running results folder structure (Example)
 ```
 lix33@nci-cgr:~/DAATeam_Xin/ad_hoc/ONT/Run/dorado/v1.2.0/20251007_1416_2E_PBE95329_69e83be9$ tree ./OUTPUT_BASECALLED_Customized/
 ./OUTPUT_BASECALLED_Customized/
@@ -175,8 +179,7 @@ lix33@nci-cgr:~/DAATeam_Xin/ad_hoc/ONT/Run/dorado/v1.2.0/20251007_1416_2E_PBE953
         │               └── PBE95329_pass_unclassified_69e83be9_00000000_0.bam.bai
         └── barcoding_summary.txt
 ```
-
-2. Performance (Example)
+3. Performance (Example)
 ```
 Step1: Run Dorado Basecaller
 Running Time: 9hrs 6min 19sec
