@@ -52,5 +52,94 @@ module load singularity/3.9.5
 bash ./run.dorado.sh
 ```
 
-## Dorado running script (run.dorado.sh)
-1. 
+## Dorado running script
+1. Your input directory should contains 3 types of directory including
+   * pod5_pass
+   * pod5_fail
+   * pod5_skip
+2. Tips
+   * In order to save the running time, you can create the softlink for the specific barcode-related pod5_pass and pod5_fail directories.
+   * pod5_skip contains all barcode (not demultiplexed), therefore, we all the pod 5 files in this folder should be considered.
+3. Two key steps, including
+   * Basecaller: convert pods 5 to aligned BAM
+      * This BAM contains all barcodes
+   * demux: demultiplex the BAM based on Barcode defined in samplesheet
+      * The barcodes defined in samplehsheet will come with the seperate demultioplex results.
+      * All barcodes not defined in samplesheet will be put into a separate folder and be viewed as unclassified.
+4. Please strictly follow the example below to set the parametes in the command line. Otherwise
+   * You may get the BAM unaligned
+   * You may get the BAM without barcode info
+   * You may get nothing be demultiplexed
+   * You may get the unaligned demultiplex results.
+   * Again, please **strictly** follow the example below to set the parameters.
+5. Example (**run.dorado.sh**)
+```
+#!/bin/bash
+
+dorado="/DCEG/Projects/Exome/SequencingData/DAATeam/Xin/ad_hoc/ONT/SourceCode/dorado/1.2.0/dorado-1.2.0-linux-x64/bin/dorado"
+modifiedBaseModel="/DCEG/Projects/Exome/SequencingData/DAATeam/Xin/ad_hoc/ONT/SourceCode/dorado/1.2.0/models/dna_r10.4.1_e8.2_400bps_sup@v5.2.0_5mCG_5hmCG@v2"
+model="/DCEG/Projects/Exome/SequencingData/DAATeam/Xin/ad_hoc/ONT/SourceCode/dorado/1.2.0/models/dna_r10.4.1_e8.2_400bps_sup@v5.2.0"
+reference="/DCEG/CGF/Sequencing/ONT/Prom24/Resources/References/T2T/UCSC/hs1.fa"
+
+samplesheet="/DCEG/Projects/Exome/SequencingData/DAATeam/Xin/ad_hoc/ONT/Run/dorado/v1.2.0/SD386619/samplesheet.csv"
+
+input="/DCEG/Projects/Exome/SequencingData/DAATeam/ad_hoc/ONT/Run/dorado/v1.2.0/SD386619"
+EXPERIMENTNAME="20251007_1416_2E_PBE95329_69e83be9"
+KITNAME="SQK-NBD114-96"
+
+#################################################
+# Run dorado (basecaller)
+#################################################
+date
+output=./OUTPUT_BASECALLED_Customized/${EXPERIMENTNAME}
+echo $input
+echo $output
+mkdir -p $output
+
+echo "Step1: Run Dorado Basecaller --->"
+SECONDS=0
+${dorado} basecaller ${model} ${input} \
+    --reference ${reference} \
+    --modified-bases-models ${modifiedBaseModel} \
+    --no-trim --min-qscore 10 --recursive --device cuda:all \
+    --kit-name ${KITNAME} \
+    --output-dir ${output}
+
+duration=$SECONDS
+echo "Running Time: $(($duration / 3600))hrs $((($duration / 60) % 60))min $(($duration % 60))sec"
+echo
+
+#################################################
+# Run dorado (summary)
+#################################################
+echo "Step2: Create a sequencing summary file for QC --->"
+BASECALLER_BAM=$(find ${output} -mindepth 3 -type d -iname "bam_pass" -exec find {} -type f -iname "*.bam" \;)
+echo "BASECALLER_BAM: ${BASECALLER_BAM}"
+
+SECONDS=0
+$dorado summary ${BASECALLER_BAM} > ${output}/${EXPERIMENTNAME}\_summary.tsv
+
+duration=$SECONDS
+echo "Running Time: $(($duration / 3600))hrs $((($duration / 60) % 60))min $(($duration % 60))sec"
+echo 
+
+#################################################
+# Run dorado (demux)
+#################################################
+# output demultiplexed bam files
+echo "Step3: dorado demultiplex --->"
+DIRDEMUX="$output/demux"
+mkdir -p ${DIRDEMUX}
+SECONDS=0
+$dorado demux \
+        --emit-summary \
+        --sample-sheet ${samplesheet} \
+        --output-dir ${DIRDEMUX} \
+        --kit-name ${KITNAME} \
+	      --no-trim \
+        --sort-bam \
+       	${BASECALLER_BAM}
+
+duration=$SECONDS
+echo "Running Time: $(($duration / 3600))hrs $((($duration / 60) % 60))min $(($duration % 60))sec"
+```
